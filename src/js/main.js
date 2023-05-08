@@ -8,6 +8,8 @@
 (function () {
    'use strict';
 
+   console.log('WORKED');
+
    /**
     * Easy selector helper function
     */

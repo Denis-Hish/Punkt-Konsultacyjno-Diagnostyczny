@@ -14,7 +14,7 @@ const TopBar = () => {
                   <a href="index.html">Punkt Konsultacyjno-Diagnostyczny</a>
                </h1>
                <a href="tel:+48503147303">
-                  <i class="bi bi-telephone"></i> 503 147 303
+                  <i className="bi bi-telephone"></i> 503 147 303
                </a>
             </div>
          </div>
