@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import './css/style.css';
+import './js/main.js';
+
 // Vendor CSS Files
 import './vendor/fontawesome-free/css/all.min.css';
 import './vendor/animate.css/animate.min.css';
@@ -18,18 +21,17 @@ import './vendor/glightbox/js/glightbox.min.js';
 import './vendor/swiper/swiper-bundle.min.js';
 import './vendor/php-email-form/validate.js';
 
-import './css/style.css';
-import './js/main.js';
-
 import Header from './components/Header';
-import TopBar from './components/TopBar';
 import Home from './pages/Home';
+import Footer from './components/Footer';
+import BtnUp from './components/BtnUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
-      <TopBar />
       <Header />
       <Home />
+      <Footer />
+      <BtnUp />
    </React.StrictMode>
 );
