@@ -6,16 +6,27 @@ import './js/main.js';
 import './components/VendorStyles';
 
 import Header from './components/Header';
-import Home from './pages/Home';
+import Hero from './components/Hero';
 import Footer from './components/Footer';
 import BtnUp from './components/BtnUp';
+import WhyUs from './components/WhyUs';
+import About from './components/About';
+import Services from './components/Services';
+import Preloader from './components/Preloader';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
       <Header />
-      <Home />
+
+      <Hero />
+      <WhyUs />
+      <About />
+      <Services />
+
       <Footer />
+
       <BtnUp />
+      <Preloader />
    </React.StrictMode>
 );

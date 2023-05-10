@@ -3,6 +3,7 @@ import './../css/style.css';
 
 const BtnUp = () => {
    useEffect(() => {
+      // Back to top button
       let backtotop = document.querySelector('.back-to-top');
       if (backtotop) {
          const toggleBacktotop = () => {

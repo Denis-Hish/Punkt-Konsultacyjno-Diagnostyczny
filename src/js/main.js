@@ -139,7 +139,7 @@
    );
 
    /**
-    * Scrool with ofset on links with a class name .scrollto
+    * Scroll with offset on links with a class name .scrollto
     */
    on(
       'click',
@@ -183,7 +183,7 @@
    }
 
    /**
-    * Initiate glightbox
+    * Initiate glightbox (галерея изображений с эффектом сдвига изображений)
     */
    //   const glightbox = GLightbox({
    //     selector: '.glightbox'

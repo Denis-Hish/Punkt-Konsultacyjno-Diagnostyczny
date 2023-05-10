@@ -7,7 +7,8 @@
 */
 
 :root {
-   --color-violet-1: #28166f;
+   --color-blue-1: #1977cc;
+   --color-blue-2: #3291e6;
 }
 
 /*--------------------------------------------------------------
@@ -72,6 +73,7 @@ h6 {
       transform: rotate(360deg);
    }
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -115,12 +117,12 @@ h6 {
 #topbar {
    background: #fff;
    height: 50px;
-   font-size: 14px;
+   font-size: 1em;
    transition: all 0.5s;
    z-index: 996;
 
    .logo {
-      font-size: 30px;
+      font-size: 2.5vw;
       margin: 0;
       padding: 0;
       line-height: 1;
@@ -140,9 +142,6 @@ h6 {
          line-height: 1;
          color: #444444;
          transition: 0.3s;
-         &:hover {
-            color: #1977cc;
-         }
       }
       i {
          color: #1977cc;
@@ -168,6 +167,30 @@ h6 {
          &:first-child {
             border-left: 0;
          }
+      }
+   }
+
+   .btn-tel {
+      margin-left: 25px;
+      background: #1977cc;
+      border-radius: 50px;
+      border: none;
+      padding: 8px 25px;
+      white-space: nowrap;
+      transition: 0.3s;
+      font-size: 14px;
+      display: inline-block;
+      &:hover {
+         background: #3291e6;
+         a,
+         i {
+            color: #fff;
+         }
+      }
+      a,
+      i {
+         color: #e9e9e9;
+         transition: 0.3s;
       }
    }
 }
@@ -479,6 +502,7 @@ h6 {
    color: #2c4964;
    margin: 10px 0 0 0;
    font-size: 24px;
+   width: 50%;
 }
 
 #hero .btn-get-started {
@@ -682,6 +706,12 @@ section {
    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
    padding: 40px 30px;
    width: 100%;
+   &:hover {
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+      i {
+         color: #3291e6;
+      }
+   }
 }
 
 .why-us .icon-boxes .icon-box i {

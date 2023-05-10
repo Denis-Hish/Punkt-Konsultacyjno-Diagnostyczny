@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
-import './../css/style.css';
 import logo from '../img/logo.png';
 
 const Header = () => {
    useEffect(() => {
-      let selectHeader = document.querySelector('#header');
-      let selectTopbar = document.querySelector('#topbar');
+      // Toggle .header-scrolled class to #header when page is scrolled
+      const selectHeader = document.querySelector('#header');
+      const selectTopbar = document.querySelector('#topbar');
+
+      const navBar = document.querySelector('.navbar');
+
       if (selectHeader) {
          const headerScrolled = () => {
             if (window.scrollY > 100) {
@@ -23,6 +26,32 @@ const Header = () => {
          window.addEventListener('load', headerScrolled);
          document.addEventListener('scroll', headerScrolled);
       }
+
+      // --------------------------------------------------- //
+
+      // Mobile nav toggle
+      const handleMobileNavToggle = (e) => {
+         if (e.target.matches('.mobile-nav-toggle')) {
+            navBar.classList.toggle('navbar-mobile');
+            e.target.classList.toggle('bi-list');
+            e.target.classList.toggle('bi-x');
+         }
+      };
+
+      const handleDropdownToggle = (e) => {
+         if (navBar.classList.contains('navbar-mobile')) {
+            e.preventDefault();
+            e.target.nextElementSibling.classList.toggle('dropdown-active');
+         }
+      };
+
+      document.addEventListener('click', handleMobileNavToggle);
+      document.addEventListener('click', handleDropdownToggle, true);
+
+      return () => {
+         document.removeEventListener('click', handleMobileNavToggle);
+         document.removeEventListener('click', handleDropdownToggle, true);
+      };
    }, []);
 
    const index = 'index.html';
@@ -38,9 +67,11 @@ const Header = () => {
                   <h1 className="logo me-auto">
                      <a href={index}>Punkt Konsultacyjno-Diagnostyczny</a>
                   </h1>
-                  <a href="tel:+48503147303">
-                     <i className="bi bi-telephone"></i> 503 147 303
-                  </a>
+                  <button className="btn-tel">
+                     <a href="tel:+48503147303">
+                        <i className="bi bi-telephone"></i> 503 147 303
+                     </a>
+                  </button>
                </div>
             </div>
          </div>
