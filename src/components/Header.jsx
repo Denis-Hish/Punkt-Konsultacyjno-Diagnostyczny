@@ -7,8 +7,6 @@ const Header = () => {
       const selectHeader = document.querySelector('#header');
       const selectTopbar = document.querySelector('#topbar');
 
-      const navBar = document.querySelector('.navbar');
-
       if (selectHeader) {
          const headerScrolled = () => {
             if (window.scrollY > 100) {
@@ -27,30 +25,19 @@ const Header = () => {
          document.addEventListener('scroll', headerScrolled);
       }
 
-      // --------------------------------------------------- //
-
       // Mobile nav toggle
       const handleMobileNavToggle = (e) => {
-         if (e.target.matches('.mobile-nav-toggle')) {
-            navBar.classList.toggle('navbar-mobile');
-            e.target.classList.toggle('bi-list');
-            e.target.classList.toggle('bi-x');
-         }
+         const navBar = document.querySelector('#navbar');
+         navBar.classList.toggle('navbar-mobile');
+         e.target.classList.toggle('bi-list');
+         e.target.classList.toggle('bi-x');
       };
 
-      const handleDropdownToggle = (e) => {
-         if (navBar.classList.contains('navbar-mobile')) {
-            e.preventDefault();
-            e.target.nextElementSibling.classList.toggle('dropdown-active');
-         }
-      };
-
-      document.addEventListener('click', handleMobileNavToggle);
-      document.addEventListener('click', handleDropdownToggle, true);
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      mobileNavToggle.addEventListener('click', handleMobileNavToggle);
 
       return () => {
-         document.removeEventListener('click', handleMobileNavToggle);
-         document.removeEventListener('click', handleDropdownToggle, true);
+         mobileNavToggle.removeEventListener('click', handleMobileNavToggle);
       };
    }, []);
 
@@ -86,17 +73,17 @@ const Header = () => {
                         </a>
                      </li>
                      <li>
-                        <a className="nav-link scrollto" href="#">
+                        <a className="nav-link scrollto" href="#why-us">
                            AKTUALNOŚCI
                         </a>
                      </li>
                      <li>
-                        <a className="nav-link scrollto" href="#">
+                        <a className="nav-link scrollto" href="#about">
                            HIV I AIDS
                         </a>
                      </li>
                      <li>
-                        <a className="nav-link scrollto" href="#">
+                        <a className="nav-link scrollto" href="#services">
                            SPOSOBY ZAKAŻENIA
                         </a>
                      </li>

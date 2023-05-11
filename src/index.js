@@ -13,6 +13,7 @@ import WhyUs from './components/WhyUs';
 import About from './components/About';
 import Services from './components/Services';
 import Preloader from './components/Preloader';
+import NavBarActive from './components/NavBarActive';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +28,7 @@ root.render(
       <Footer />
 
       <BtnUp />
+      <NavBarActive />
       <Preloader />
    </React.StrictMode>
 );
