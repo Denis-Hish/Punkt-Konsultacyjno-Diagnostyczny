@@ -14,6 +14,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Preloader from './components/Preloader';
 import NavBarActive from './components/NavBarActive';
+import Invite from './components/Invite';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,7 +24,8 @@ root.render(
       <Hero />
       <WhyUs />
       <About />
-      <Services />
+      {/* <Services /> */}
+      <Invite />
 
       <Footer />
 

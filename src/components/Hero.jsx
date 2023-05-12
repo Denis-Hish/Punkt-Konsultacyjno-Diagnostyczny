@@ -1,5 +1,4 @@
 import React from 'react';
-import './../css/style.css';
 
 const Hero = () => {
    return (
@@ -8,7 +7,7 @@ const Hero = () => {
             <h1>Zapraszamy</h1>
             <h2>do korzystania z poradnictwa i testowania w kierunku zakażenia wirusem HIV, HCV i kiły</h2>
             <a href="#about" className="btn-get-started scrollto">
-               SERDECZNIE ZAPRASZAMY!
+               więcej szczegółów
             </a>
          </div>
       </section>

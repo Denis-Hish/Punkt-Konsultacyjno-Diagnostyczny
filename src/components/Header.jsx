@@ -41,6 +41,57 @@ const Header = () => {
       };
    }, []);
 
+   useEffect(() => {
+      // Scrolls to an element with header offset
+      const scrollto = (el) => {
+         let header = document.querySelector('#header');
+         let offset = header.offsetHeight;
+
+         let element = document.querySelector(el);
+         if (!element) return; // Проверка наличия элемента
+
+         let elementPos = element.offsetTop;
+         window.scrollTo({
+            top: elementPos - offset,
+            behavior: 'smooth',
+         });
+      };
+
+      // Scroll with offset on links with a class name .scrollto
+      const handleLinkClick = (e) => {
+         if (e.target.hash) {
+            e.preventDefault();
+
+            let navbar = document.querySelector('#navbar');
+            if (navbar.classList.contains('navbar-mobile')) {
+               navbar.classList.remove('navbar-mobile');
+               let navbarToggle = document.querySelector('.mobile-nav-toggle');
+               navbarToggle.classList.toggle('bi-list');
+               navbarToggle.classList.toggle('bi-x');
+            }
+            scrollto(e.target.hash);
+         }
+      };
+
+      // Scroll with offset on page load with hash links in the url
+      const handleLoad = () => {
+         if (window.location.hash) {
+            let element = document.querySelector(window.location.hash);
+            if (element) {
+               scrollto(window.location.hash);
+            }
+         }
+      };
+
+      document.addEventListener('click', handleLinkClick, true);
+      window.addEventListener('load', handleLoad);
+
+      return () => {
+         document.removeEventListener('click', handleLinkClick, true);
+         window.removeEventListener('load', handleLoad);
+      };
+   }, []);
+
    const index = 'index.html';
 
    return (
@@ -51,14 +102,12 @@ const Header = () => {
                   <a href={index} className="logo-pkd logo me-auto">
                      <img src={logo} alt="Logo" className="img-fluid" />
                   </a>
-                  <h1 className="logo me-auto">
+                  <h1 className="title logo me-auto">
                      <a href={index}>Punkt Konsultacyjno-Diagnostyczny</a>
                   </h1>
-                  <button className="btn-tel">
-                     <a href="tel:+48503147303">
-                        <i className="bi bi-telephone"></i> 503 147 303
-                     </a>
-                  </button>
+                  <a className="btn-tel" href="tel:+48503147303">
+                     <i className="bi bi-telephone"></i>503 147 303
+                  </a>
                </div>
             </div>
          </div>
