@@ -26,6 +26,9 @@ const Invite = () => {
                            <span>
                               <h4>Napisz na stronie internetowej</h4>
                            </span>
+                           <div className="card-hover">
+                              <p>aids.gov.pl/poradnia_internetowa</p>
+                           </div>
                         </div>
                      </div>
                   </a>
@@ -41,6 +44,9 @@ const Invite = () => {
                            <span>
                               <h4>Lub wyślij e-mailem</h4>
                            </span>
+                           <div className="card-hover">
+                              <p>poradnia@aids.gov.pl</p>
+                           </div>
                         </div>
                      </div>
                   </a>
@@ -56,6 +62,9 @@ const Invite = () => {
                            <span>
                               <h4>Lub zadzwoń</h4>
                            </span>
+                           <div className="card-hover">
+                              <p>800 888 448</p>
+                           </div>
                         </div>
                      </div>
                   </a>
