@@ -2,22 +2,25 @@ import './css/style.css';
 import './js/main.js';
 import './components/VendorStyles';
 import 'animate.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Hero from './components/Hero';
-import WhyUs from './components/WhyUs';
-import About from './components/About';
-import Invite from './components/Invite';
+import Header from './components/Header';
 import Home from './pages/Home';
-import What_Is from './pages/What_Is';
+import News from './pages/News';
+import Notfoundpage from './pages/Notfoundpage';
+import Footer from './components/Footer';
 
 const App = () => {
    return (
-      <>
-         <Hero />
-         <WhyUs />
-         <About />
-         <Invite />
-      </>
+      <BrowserRouter>
+         <Header />
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/news" element={<News />} />
+            <Route path="*" element={<Notfoundpage />} />
+         </Routes>
+         <Footer />
+      </BrowserRouter>
    );
 };
 

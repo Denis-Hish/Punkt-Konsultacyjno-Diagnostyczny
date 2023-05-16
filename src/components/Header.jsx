@@ -1,9 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-
-import Home from '../pages/Home';
-import News from '../pages/News';
-import Notfoundpage from '../pages/Notfoundpage';
+import { Link } from 'react-router-dom';
 
 import logo from '../img/logo.png';
 
@@ -32,7 +28,7 @@ const Header = () => {
       }
 
       // Mobile nav toggle
-      const handleMobileNavToggle = (e) => {
+      const handleMobileNavToggle = e => {
          const navBar = document.querySelector('#navbar');
          navBar.classList.toggle('navbar-mobile');
          e.target.classList.toggle('bi-list');
@@ -49,7 +45,7 @@ const Header = () => {
 
    useEffect(() => {
       // Scrolls to an element with header offset
-      const scrollto = (el) => {
+      const scrollto = el => {
          let header = document.querySelector('#header');
          let offset = header.offsetHeight;
 
@@ -64,7 +60,7 @@ const Header = () => {
       };
 
       // Scroll with offset on links with a class name .scrollto
-      const handleLinkClick = (e) => {
+      const handleLinkClick = e => {
          if (e.target.hash) {
             e.preventDefault();
 
@@ -167,11 +163,6 @@ const Header = () => {
                </nav>
             </div>
          </header>
-         <Routes>
-            <Route path="/" element={Home} />
-            <Route path="/news" element={News} />
-            <Route path="*" element={Notfoundpage} />
-         </Routes>
       </>
    );
 };
