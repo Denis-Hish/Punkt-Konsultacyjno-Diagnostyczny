@@ -3,10 +3,20 @@ import { Link } from 'react-router-dom';
 
 const Notfoundpage = () => {
    return (
-      <>
-         <h1 className="delete_class">404</h1>
-         <Link to="/">Home</Link>
-      </>
+      <section className="notfoundpage">
+         <div className="container">
+            <h3>
+               Uuups! <br />
+               Houston, mamy problem
+            </h3>
+            <h4>Błąd</h4>
+            <h2>404</h2>
+            <h4>Strona nie znaleziona</h4>
+            <button className="btn">
+               <Link to="/">STRONA GŁÓWNA</Link>
+            </button>
+         </div>
+      </section>
    );
 };
 

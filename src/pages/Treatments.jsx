@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Treatments = () => {
-   return <h1 className="delete_class">Treatments page</h1>;
+   return (
+      <div className="delete_class">
+         <h1>Treatments page</h1>
+      </div>
+   );
 };
 
 export default Treatments;

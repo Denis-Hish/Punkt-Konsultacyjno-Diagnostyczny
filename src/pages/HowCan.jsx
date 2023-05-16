@@ -1,11 +1,11 @@
 import React from 'react';
 
-const News = () => {
+const How_Can = () => {
    return (
       <div className="delete_class">
-         <h1>News page</h1>
+         <h1>How_Can page</h1>
       </div>
    );
 };
 
-export default News;
+export default How_Can;

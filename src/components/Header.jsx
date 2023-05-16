@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 import logo from '../img/logo.png';
 
@@ -28,7 +28,7 @@ const Header = () => {
       }
 
       // Mobile nav toggle
-      const handleMobileNavToggle = e => {
+      const handleMobileNavToggle = (e) => {
          const navBar = document.querySelector('#navbar');
          navBar.classList.toggle('navbar-mobile');
          e.target.classList.toggle('bi-list');
@@ -45,7 +45,7 @@ const Header = () => {
 
    useEffect(() => {
       // Scrolls to an element with header offset
-      const scrollto = el => {
+      const scrollto = (el) => {
          let header = document.querySelector('#header');
          let offset = header.offsetHeight;
 
@@ -60,7 +60,7 @@ const Header = () => {
       };
 
       // Scroll with offset on links with a class name .scrollto
-      const handleLinkClick = e => {
+      const handleLinkClick = (e) => {
          if (e.target.hash) {
             e.preventDefault();
 
@@ -94,6 +94,12 @@ const Header = () => {
       };
    }, []);
 
+   const location = useLocation();
+
+   useEffect(() => {
+      window.scrollTo(0, 0);
+   }, [location.pathname]);
+
    const index = 'index.html';
 
    return (
@@ -119,44 +125,44 @@ const Header = () => {
                <nav id="navbar" className="navbar order-last order-lg-0">
                   <ul>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <NavLink className="nav-link scrollto" to="/">
                            STRONA GŁÓWNA
-                        </Link>
+                        </NavLink>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/news">
+                        <NavLink className="nav-link scrollto" to="/news">
                            AKTUALNOŚCI
-                        </Link>
+                        </NavLink>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <NavLink className="nav-link scrollto" to="/what">
                            HIV I AIDS
-                        </Link>
+                        </NavLink>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <NavLink className="nav-link scrollto" to="/how">
                            SPOSOBY ZAKAŻENIA
-                        </Link>
+                        </NavLink>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <NavLink className="nav-link scrollto" to="/hiv">
                            TEST NA OBECNOŚĆ HIV
-                        </Link>
+                        </NavLink>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <NavLink className="nav-link scrollto" to="/treatments">
                            LECZENIE HIV/AIDS
-                        </Link>
+                        </NavLink>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <NavLink className="nav-link scrollto" to="/diseases">
                            INNE ZAKAŻENIA I CHOROBY
-                        </Link>
+                        </NavLink>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <NavLink className="nav-link scrollto" to="/materials">
                            MATERIAŁY EDUKACYJNE
-                        </Link>
+                        </NavLink>
                      </li>
                   </ul>
                   <i className="bi bi-list mobile-nav-toggle"></i>

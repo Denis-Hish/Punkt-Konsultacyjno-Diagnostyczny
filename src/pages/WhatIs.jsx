@@ -73,7 +73,12 @@ const What_Is = () => {
                      <img src={image2} alt="" />
                   </div>
                   <div class="text-center">
-                     <a href="https://aids.gov.pl/hiv_aids/podstawowe_informacje/" class="more-btn" target="_blank">
+                     <a
+                        href="https://aids.gov.pl/hiv_aids/podstawowe_informacje/"
+                        class="more-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
                         Dowiedz się więcej<i class="bx bx-chevron-right"></i>
                      </a>
                   </div>
@@ -106,6 +111,7 @@ const What_Is = () => {
                   // height="720"
                   width="720"
                   height="360"
+                  rel="noopener noreferrer"
                   src="https://www.youtube.com/embed/Uw66a74nEeM"
                   title="AIDS - epidemia wciąż niepokonana"
                   frameborder="0"
@@ -114,7 +120,12 @@ const What_Is = () => {
                ></iframe>
 
                <div class="text-center">
-                  <a href="https://aids.gov.pl/publikacje/168/" class="more-btn" target="_blank">
+                  <a
+                     href="https://aids.gov.pl/publikacje/168/"
+                     class="more-btn"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
                      Inne filmy edukacyjne<i class="bx bx-chevron-right"></i>
                   </a>
                </div>

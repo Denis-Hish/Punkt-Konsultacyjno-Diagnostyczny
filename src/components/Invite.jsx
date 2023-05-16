@@ -12,7 +12,7 @@ const Invite = () => {
                      Krajowego Centrum ds. AIDS
                   </a>
                </p>
-               <h5>Szukasz odpowiedzi na trudne pytania, potrzebujesz informacj?</h5>
+               <h5>Szukasz odpowiedzi na trudne pytania, potrzebujesz informacji?</h5>
             </div>
 
             <div className="row">

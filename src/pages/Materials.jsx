@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Materials = () => {
-   return <h1 className="delete_class">Materials page</h1>;
+   return (
+      <div className="delete_class">
+         <h1>Materials page</h1>
+      </div>
+   );
 };
 
 export default Materials;

@@ -256,13 +256,11 @@ h6 {
 }
 
 @media (max-width: 1200px) {
-  .navbar > ul > li > a,
-  .navbar > ul > li > a:focus {
+  .navbar > ul > li > a {
     font-size: 11px;
   }
 }
-.navbar a,
-.navbar a:focus {
+.navbar a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -274,8 +272,7 @@ h6 {
   padding: 5px 2px;
 }
 
-.navbar a i,
-.navbar a:focus i {
+.navbar a i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
@@ -283,7 +280,6 @@ h6 {
 
 .navbar a:hover,
 .navbar .active,
-.navbar .active:focus,
 .navbar li:hover > a {
   color: var(--color-blue-1);
   border-color: var(--color-blue-1);
@@ -1855,13 +1851,61 @@ section {
   text-decoration: none;
 }
 
-.delete_class {
+.notfoundpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  background-color: #f1f7fd;
+  background: url(./../img/404-1.png) no-repeat bottom left, url(./../img/404-2.png) no-repeat center right;
+  background-size: 35%;
+  color: var(--color-blue-2);
+  margin-top: 100px;
+}
+.notfoundpage .container {
+  text-align: center;
+}
+.notfoundpage .container .btn {
+  background: var(--color-blue-1);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 50px;
+}
+.notfoundpage .container .btn a {
+  color: #e9e9e9;
+}
+.notfoundpage .container .btn:hover {
+  background: var(--color-blue-2);
+}
+.notfoundpage .container .btn:hover a {
+  color: #fff;
+}
+.notfoundpage h2 {
+  font-size: 120px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.notfoundpage h3 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+.notfoundpage h4 {
+  font-size: 2rem;
+}
+
+.delete_class h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-size: 76px;
-  font-weight: 900;
+  font-weight: 700;
   color: brown;
 }/*# sourceMappingURL=style.css.map */

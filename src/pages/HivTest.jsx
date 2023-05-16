@@ -1,11 +1,11 @@
 import React from 'react';
 
-const News = () => {
+const Hiv_Test = () => {
    return (
       <div className="delete_class">
-         <h1>News page</h1>
+         <h1>HivTest page</h1>
       </div>
    );
 };
 
-export default News;
+export default Hiv_Test;
