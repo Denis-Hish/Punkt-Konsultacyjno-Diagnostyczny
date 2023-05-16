@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 
-import Home from '../pages/Home';
-import News from '../pages/News';
-import Notfoundpage from '../pages/Notfoundpage';
-
 import logo from '../img/logo.png';
 
 const Header = () => {
@@ -123,55 +119,50 @@ const Header = () => {
                <nav id="navbar" className="navbar order-last order-lg-0">
                   <ul>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <a className="nav-link scrollto active" href="#">
                            STRONA GŁÓWNA
-                        </Link>
+                        </a>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/news">
+                        <a className="nav-link scrollto" href="#why-us">
                            AKTUALNOŚCI
-                        </Link>
+                        </a>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <a className="nav-link scrollto" href="#about">
                            HIV I AIDS
-                        </Link>
+                        </a>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <a className="nav-link scrollto" href="#services">
                            SPOSOBY ZAKAŻENIA
-                        </Link>
+                        </a>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <a className="nav-link scrollto" href="#">
                            TEST NA OBECNOŚĆ HIV
-                        </Link>
+                        </a>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <a className="nav-link scrollto" href="#">
                            LECZENIE HIV/AIDS
-                        </Link>
+                        </a>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <a className="nav-link scrollto" href="#">
                            INNE ZAKAŻENIA I CHOROBY
-                        </Link>
+                        </a>
                      </li>
                      <li>
-                        <Link className="nav-link scrollto" to="/">
+                        <a className="nav-link scrollto" href="#">
                            MATERIAŁY EDUKACYJNE
-                        </Link>
+                        </a>
                      </li>
                   </ul>
                   <i className="bi bi-list mobile-nav-toggle"></i>
                </nav>
             </div>
          </header>
-         <Routes>
-            <Route path="/" element={Home} />
-            <Route path="/news" element={News} />
-            <Route path="*" element={Notfoundpage} />
-         </Routes>
       </>
    );
 };

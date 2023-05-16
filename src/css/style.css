@@ -256,7 +256,8 @@ h6 {
 }
 
 @media (max-width: 1200px) {
-  .navbar > ul > li > a {
+  .navbar > ul > li > a,
+  .navbar > ul > li > a:focus {
     font-size: 11px;
   }
 }
