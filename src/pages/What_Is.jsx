@@ -113,7 +113,11 @@ const What_Is = () => {
                   allowfullscreen
                ></iframe>
 
-               <p>inne filmy edukacyjne dostępne na: https://aids.gov.pl/publikacje/168/</p>
+               <div class="text-center">
+                  <a href="https://aids.gov.pl/publikacje/168/" class="more-btn" target="_blank">
+                     Inne filmy edukacyjne<i class="bx bx-chevron-right"></i>
+                  </a>
+               </div>
             </div>
          </div>
       </section>
