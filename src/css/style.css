@@ -509,7 +509,7 @@ h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 35px;
-  margin-top: 30px;
+  margin: 30px 0 50px;
   border-radius: 50px;
   transition: 0.5s;
   color: #e9e9e9;
@@ -754,6 +754,39 @@ section {
 .about .icon-boxes .icon-box .no-mb {
   margin-bottom: 0;
 }
+.about .icon-boxes .icon-box .icon-box-container {
+  display: flex;
+  align-items: center;
+}
+.about .icon-boxes .icon-box .icon-box-container h4,
+.about .icon-boxes .icon-box .icon-box-container p {
+  margin-left: 21px;
+}
+.about .icon-boxes .icon-box .icon-box-container .btn-tel {
+  background: var(--color-blue-1);
+  border-radius: 50px;
+  border: none;
+  padding: 10px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  color: #e9e9e9;
+  margin-left: 20px;
+}
+.about .icon-boxes .icon-box .icon-box-container .btn-tel:hover {
+  background: var(--color-blue-2);
+  color: #fff;
+}
+@media (max-width: 480px) {
+  .about .icon-boxes .icon-box .icon-box-container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .about .icon-boxes .icon-box .icon-box-container .btn-tel {
+    margin: 20px 0 0 21px;
+  }
+}
 .about .more-btn {
   display: inline-block;
   background: var(--color-blue-1);
@@ -948,10 +981,13 @@ section {
 .what-is {
   margin-top: 100px;
 }
-.what-is .hiv,
 .what-is .aids,
+.what-is .aids-content {
+  background: #f1f7fd;
+  padding: 60px 0 60px;
+}
 .what-is .brochures {
-  padding: 60px 0;
+  padding: 60px 0 0;
 }
 .what-is h3 {
   text-align: left;
@@ -1013,45 +1049,36 @@ section {
   font-size: 15px;
   color: #848484;
 }
-.what-is .text,
-.what-is .aids {
-  background: #f1f7fd;
-  padding: 60px 0 60px;
-}
 .what-is img {
   width: 30%;
   border-radius: 5px;
 }
 .what-is h5 {
   font-family: "Raleway", sans-serif;
-  margin-top: 5rem;
+  margin-top: 10rem;
   color: #2c4964;
   font-size: 24px;
   font-weight: 700;
 }
-.what-is .text p:nth-child(odd) {
+.what-is .aids p:nth-child(odd) {
   margin-right: 2rem;
 }
-.what-is .text p:nth-child(even) {
+.what-is .aids p:nth-child(even) {
   margin-left: 2rem;
 }
 @media (max-width: 992px) {
-  .what-is .text .d-flex {
+  .what-is .aids .d-flex {
     flex-direction: column;
   }
-  .what-is .text img {
+  .what-is .aids img {
     width: 100%;
   }
-  .what-is .text p:nth-child(odd) {
+  .what-is .aids p:nth-child(odd) {
     margin-right: 0;
   }
-  .what-is .text p:nth-child(even) {
+  .what-is .aids p:nth-child(even) {
     margin-left: 0;
   }
-}
-.what-is .brochures iframe {
-  display: block;
-  margin: 0 auto;
 }
 .what-is .more-btn {
   display: inline-block;
@@ -1073,6 +1100,128 @@ section {
 }
 .what-is .more-btn:hover i {
   color: var(--color-white-1);
+}
+.what-is .hiv {
+  padding: 60px 0;
+  margin-top: -50px;
+  margin-bottom: -150px;
+  background: url(../img/virus-2.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.what-is .hiv .section-title {
+  padding: 100px 0 100px;
+}
+.what-is .hiv .card {
+  margin-top: 60px;
+  padding: 40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.what-is .hiv .card:hover {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+}
+.what-is .aids-content .card {
+  padding: 40px;
+  margin-right: 40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.what-is .aids-content .card:hover {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 992px) {
+  .what-is .aids-content .card {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+.what-is .brochures h5 {
+  margin-top: 0;
+}
+.what-is .brochures .video-box {
+  background: url("../img/video.png") center center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+.what-is .brochures .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#1977cc 50%, rgba(25, 119, 204, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  overflow: hidden;
+}
+.what-is .brochures .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.what-is .brochures .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(25, 119, 204, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+.what-is .brochures .play-btn:hover::after {
+  border-left: 15px solid var(--color-blue-1);
+  transform: scale(20);
+}
+.what-is .brochures .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+.what-is .brochures .text-center {
+  margin-bottom: 50px;
+}
+.what-is .brochures .container-fluid .text-cards {
+  gap: 20px;
+  padding-bottom: 0 !important;
 }
 
 /*--------------------------------------------------------------
@@ -1851,6 +2000,9 @@ section {
   text-decoration: none;
 }
 
+/*--------------------------------------------------------------
+# 404 Page not found
+--------------------------------------------------------------*/
 .notfoundpage {
   display: flex;
   align-items: center;

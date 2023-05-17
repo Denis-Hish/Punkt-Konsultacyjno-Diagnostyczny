@@ -9,8 +9,8 @@ import './../vendor/remixicon/remixicon.css';
 import './../vendor/swiper/swiper-bundle.min.css';
 
 // Vendor JS Files
-import '../vendor/purecounter/purecounter_vanilla.js';
-import '../vendor/bootstrap/js/bootstrap.bundle.min.js';
-import '../vendor/glightbox/js/glightbox.min.js';
-import '../vendor/swiper/swiper-bundle.min.js';
-import '../vendor/php-email-form/validate.js';
+// import '../vendor/purecounter/purecounter_vanilla.js'; // счётчик
+// import '../vendor/bootstrap/js/bootstrap.bundle.min.js';
+// import '../vendor/glightbox/js/glightbox.min.js'; //галерея изображений
+// import '../vendor/swiper/swiper-bundle.min.js'; // свайпер
+// import '../vendor/php-email-form/validate.js';
