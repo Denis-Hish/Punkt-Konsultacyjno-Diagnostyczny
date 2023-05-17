@@ -1,5 +1,8 @@
 import React from 'react';
 
+import doc1 from './../doc/3/Co-musisz-wiedziec_2020.pdf';
+import doc2 from './../doc/3/HIVAIDS_O_co_kaman_2022.pdf';
+
 const Brochures = () => {
    return (
       <>
@@ -22,22 +25,31 @@ const Brochures = () => {
                            rel="noopener noreferrer"
                         ></a>
                      </div>
-                     <div class="text-cards col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                        <div class="icon-box">
-                           <div class="icon">{/* <i class="bx bx-fingerprint"></i> */}</div>
-                           <h4 class="title">{/* <a href="">Lorem Ipsum</a> */}</h4>
-                           <p class="description">
-                              "Co musisz wiedzieć o HIV i AIDS bez względu na to, gdzie mieszkasz czy pracujesz" –
-                              broszura, która zapoznaje z informacjami na temat HIV i AIDS oraz z faktami dotyczącymi
-                              życia i pracy z osobami HIV+.
-                           </p>
-                        </div>
-                        <div class="icon-box">
-                           <p class="description">
-                              "HIV?! AIDS?! O co kaman?" – broszura przeznaczona dla młodzieży, powstała w efekcie
-                              dialogu pomiędzy Krajowym Centrum ds. AIDS i uczniami gimnazjów.
-                           </p>
-                        </div>
+                     <div class="icon-boxes text-cards col-xl-7 col-lg-6 d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                        <a href={doc1} target="_blank" rel="noopener noreferrer">
+                           <div class="icon-box icon-box-2 icon-box-2-bg-1">
+                              <div class="icon">
+                                 <i class="bi bi-file-pdf"></i>
+                              </div>
+                              <p class="description">
+                                 "Co musisz wiedzieć o HIV i AIDS bez względu na to, gdzie mieszkasz czy pracujesz" –
+                                 broszura, która zapoznaje z informacjami na temat HIV i AIDS oraz z faktami dotyczącymi
+                                 życia i pracy z osobami HIV+.
+                              </p>
+                           </div>
+                        </a>
+
+                        <a href={doc2} target="_blank" rel="noopener noreferrer">
+                           <div class="icon-box icon-box-2 icon-box-2-bg-2">
+                              <div class="icon">
+                                 <i class="bi bi-file-pdf"></i>
+                              </div>
+                              <p class="description">
+                                 "HIV?! AIDS?! O co kaman?" – broszura przeznaczona dla młodzieży, powstała w efekcie
+                                 dialogu pomiędzy Krajowym Centrum ds. AIDS i uczniami gimnazjów.
+                              </p>
+                           </div>
+                        </a>
                         <div className="text-center">
                            <a
                               href="https://aids.gov.pl/publikacje/168/"
@@ -45,13 +57,13 @@ const Brochures = () => {
                               target="_blank"
                               rel="noopener noreferrer"
                            >
-                              Inne filmy edukacyjne<i className="bx bx-chevron-right"></i>
+                              Inne filmy edukacyjne
+                              <i className="bx bx-chevron-right"></i>
                            </a>
                         </div>
                      </div>
                   </div>
                </div>
-               {/* ---------------------------------------- */}
             </div>
          </div>
       </>

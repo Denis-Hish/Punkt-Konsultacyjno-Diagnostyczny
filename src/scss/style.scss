@@ -1022,9 +1022,6 @@ section {
       background: #f1f7fd;
       padding: 60px 0 60px;
    }
-   .brochures {
-      padding: 60px 0 0;
-   }
    h3 {
       text-align: left;
       position: relative;
@@ -1058,12 +1055,12 @@ section {
       }
    }
    .icon-boxes .icon-box {
+      width: 100%;
+      padding: 40px 30px;
       text-align: center;
       border-radius: 10px;
       background: #fff;
       box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      padding: 40px 30px;
-      width: 100%;
       &:hover {
          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
          i {
@@ -1074,7 +1071,6 @@ section {
    .icon-boxes .icon-box i {
       font-size: 40px;
       color: var(--color-blue-1);
-      margin-bottom: 30px;
    }
    .icon-boxes .icon-box h4 {
       font-size: 20px;
@@ -1102,6 +1098,78 @@ section {
       }
       p:nth-child(even) {
          margin-left: 2rem;
+      }
+   }
+   .brochures {
+      padding: 60px 0 0;
+      .icon-boxes {
+         .icon-box-2 {
+            transition: all 0.3s ease-in-out;
+            background-color: var(--color-blue-1);
+            i,
+            p {
+               color: var(--color-white-2);
+               position: relative;
+               z-index: 2;
+            }
+            &:hover {
+               background-color: var(--color-blue-2);
+               i,
+               p {
+                  color: var(--color-white-1);
+               }
+               .icon {
+                  background-color: var(--color-blue-1);
+               }
+            }
+            .icon {
+               position: relative;
+               z-index: 2;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               margin: 0 auto;
+               width: 64px;
+               height: 64px;
+               border: 2px solid var(--color-white-2);
+               border-radius: 50px;
+               background-color: var(--color-blue-2);
+               transition: 0.3s;
+            }
+         }
+      }
+      .icon-box.icon-box-2 {
+         position: relative;
+         overflow: hidden;
+         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+         &.icon-box-2-bg-1::before,
+         &.icon-box-2-bg-2::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(25, 121, 204, 0.85);
+            transition: all 0.3s ease-in-out;
+            z-index: 1;
+         }
+
+         &.icon-box-2-bg-1 {
+            background: url(../img/icon-box-bg-1.png) no-repeat center center;
+            background-size: auto 80%;
+         }
+         &.icon-box-2-bg-2 {
+            background: url(../img/icon-box-bg-2.png) no-repeat center center;
+            background-size: auto 80%;
+         }
+         &:hover {
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+            &.icon-box-2-bg-1::before,
+            &.icon-box-2-bg-2::before {
+               background-color: rgba(25, 121, 204, 0.95);
+            }
+         }
       }
    }
 
@@ -1147,7 +1215,7 @@ section {
       padding: 60px 0;
       margin-top: -50px;
       margin-bottom: -150px;
-      background: url(../img/virus-2.png) no-repeat center center;
+      background: url(../img/virus.png) no-repeat center center;
       background-size: cover;
       background-attachment: fixed;
 
@@ -1186,7 +1254,8 @@ section {
       .video-box {
          background: url('../img/video.png') center center no-repeat;
          background-size: cover;
-         min-height: 500px;
+         min-height: 350px;
+         border-radius: 5px;
       }
       .play-btn {
          width: 94px;

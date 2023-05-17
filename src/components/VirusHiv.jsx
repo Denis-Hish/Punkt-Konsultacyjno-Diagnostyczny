@@ -24,7 +24,7 @@ const NameVirus = () => {
                   <div className="icon-boxes d-flex flex-column justify-content-center">
                      <div className="row">
                         <div className="col-xl-4 d-flex align-items-stretch">
-                           <div className="icon-box mt-4 mt-xl-0">
+                           <div className="icon-box mt-4 mt-lg-0 mt-xl-0">
                               <i className="bi bi-droplet"></i>
                               <h4>Przez krew</h4>
                            </div>
