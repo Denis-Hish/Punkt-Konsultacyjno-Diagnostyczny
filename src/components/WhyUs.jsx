@@ -6,13 +6,13 @@ const WhyUs = () => {
          <div className="container">
             <div className="row">
                <section className="section-title">
-                  <h2>Badania wykonywane w naszym punkcie są:</h2>
+                  <h2 data-aos="fade-down">Badania wykonywane w naszym punkcie są:</h2>
                </section>
 
                <div className="col-lg d-flex align-items-stretch">
                   <div className="icon-boxes d-flex flex-column justify-content-center">
                      <div className="row">
-                        <div className="col-lg-4 d-flex align-items-stretch">
+                        <div data-aos="fade-down" data-aos-delay="100" className="col-lg-4 d-flex align-items-stretch">
                            <div className="icon-box mt-4 mt-xl-0">
                               <i className="bi bi-person-lock"></i>
                               <h4>Anonimowe</h4>
@@ -23,7 +23,7 @@ const WhyUs = () => {
                               </p>
                            </div>
                         </div>
-                        <div className="col-lg-4 d-flex align-items-stretch">
+                        <div data-aos="fade-down" data-aos-delay="200" className="col-lg-4 d-flex align-items-stretch">
                            <div className="icon-box mt-4 mt-xl-0">
                               <i className="bi bi-piggy-bank"></i>
                               <h4>Bezpłatne</h4>
@@ -33,7 +33,7 @@ const WhyUs = () => {
                               </p>
                            </div>
                         </div>
-                        <div className="col-lg-4 d-flex align-items-stretch">
+                        <div data-aos="fade-down" data-aos-delay="300" className="col-lg-4 d-flex align-items-stretch">
                            <div className="icon-box mt-4 mt-xl-0">
                               <i className="bi bi-file-earmark-text"></i>
                               <h4>Nie wymagają skierowania</h4>

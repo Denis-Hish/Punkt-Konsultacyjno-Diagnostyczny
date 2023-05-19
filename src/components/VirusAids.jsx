@@ -6,7 +6,7 @@ import image2 from './../img/gallery/gallery-4.jpg';
 const VirusAids = () => {
    return (
       <>
-         <div className="aids">
+         <div className="aids section-bg">
             <div className="container">
                <h5>
                   <b>AIDS</b> – od angielskiej nazwy acquired immunodeficiency syndrome, po polsku to zespół nabytego

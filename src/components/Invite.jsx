@@ -2,7 +2,7 @@ import React from 'react';
 
 const Invite = () => {
    return (
-      <section id="invite" className="invite">
+      <section id="invite" className="invite section-bg">
          <div className="container">
             <div className="section-title">
                <h2>SERDECZNIE ZAPRASZAMY!</h2>

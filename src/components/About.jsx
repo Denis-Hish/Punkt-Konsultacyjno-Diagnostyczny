@@ -5,9 +5,15 @@ const About = () => {
       <section id="about" className="about">
          <div className="container-fluid">
             <div className="row">
-               <div className="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative"></div>
+               <div
+                  data-aos="fade-right"
+                  className="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative"
+               ></div>
 
-               <div className="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+               <div
+                  data-aos="fade-left"
+                  className="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
+               >
                   <h3>
                      Działalność naszego Punktu jest finansowana ze środków{' '}
                      <a href="https://aids.gov.pl/" target="_blank" rel="noopener noreferrer">

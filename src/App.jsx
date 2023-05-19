@@ -18,7 +18,7 @@ import Diseases from './pages/Diseases';
 import Materials from './pages/Materials';
 
 import Notfoundpage from './pages/Notfoundpage';
-import FooterNew from './components/FooterNew';
+import Footer from './components/Footer';
 import BtnUp from './components/BtnUp';
 import Preloader from './components/Preloader';
 
@@ -26,6 +26,7 @@ const App = () => {
    return (
       <BrowserRouter>
          <Header />
+
          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/news" element={<News />} />
@@ -35,11 +36,10 @@ const App = () => {
             <Route path="/treatments" element={<Treatments />} />
             <Route path="/diseases" element={<Diseases />} />
             <Route path="/materials" element={<Materials />} />
-
             <Route path="*" element={<Notfoundpage />} />
          </Routes>
 
-         <FooterNew />
+         <Footer />
          <BtnUp />
          <Preloader />
       </BrowserRouter>

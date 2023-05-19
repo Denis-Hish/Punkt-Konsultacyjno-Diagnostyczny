@@ -9,8 +9,13 @@ import './../vendor/remixicon/remixicon.css';
 import './../vendor/swiper/swiper-bundle.min.css';
 
 // Vendor JS Files
+import '../vendor/bootstrap/js/bootstrap.bundle.min.js'; // аккордеон
 // import '../vendor/purecounter/purecounter_vanilla.js'; // счётчик
-// import '../vendor/bootstrap/js/bootstrap.bundle.min.js';
 // import '../vendor/glightbox/js/glightbox.min.js'; //галерея изображений
 // import '../vendor/swiper/swiper-bundle.min.js'; // свайпер
 // import '../vendor/php-email-form/validate.js';
+
+// Animate On Scroll Library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
