@@ -1303,27 +1303,32 @@ section {
 }
 .what-is .what-is-worth-knowing .w-link span {
   position: absolute;
-  top: -90px;
-  right: 0;
+  top: -110px;
+  right: -10px;
   width: 750px;
   color: var(--color-white-2);
-  background-color: rgba(22, 107, 181, 0.8);
   padding: 10px 20px;
   border-radius: 5px;
+  background-color: rgba(22, 107, 181, 0.8);
   visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 .what-is .what-is-worth-knowing .w-link span::after {
   content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
   top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgba(22, 107, 181, 0.8) transparent transparent transparent;
-  border-color: red;
+  right: 1%;
+  background-color: rgba(22, 107, 181, 0.8);
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 .what-is .what-is-worth-knowing .w-link:hover span {
   visibility: visible;
+  opacity: 1;
 }
 .what-is .what-is-worth-knowing .w-link i {
   position: absolute;
