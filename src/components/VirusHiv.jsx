@@ -1,5 +1,7 @@
 import React from 'react';
 
+import image1 from './../img/gallery/gallery-3.jpg';
+
 const NameVirus = () => {
    return (
       <div className="hiv">
@@ -44,7 +46,8 @@ const NameVirus = () => {
                      </div>
                   </div>
                </div>
-               <div className="d-flex align-items-center">
+               <div className="d-flex align-items-center mt-5">
+                  <img src={image1} alt="Image" />
                   <div className="card">
                      <p>
                         Zakażenie nie powoduje żadnych objawów na skórze czy na błonach śluzowych, nie powoduje też

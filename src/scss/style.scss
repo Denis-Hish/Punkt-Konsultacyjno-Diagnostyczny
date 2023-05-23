@@ -1097,6 +1097,7 @@ section {
       font-size: 24px;
       font-weight: 700;
    }
+
    .aids {
       p:nth-child(odd) {
          margin-right: 2rem;
@@ -1105,6 +1106,7 @@ section {
          margin-left: 2rem;
       }
    }
+
    .brochures {
       padding: 60px 0;
       .icon-boxes {
@@ -1179,7 +1181,8 @@ section {
    }
 
    @media (max-width: 992px) {
-      .aids {
+      .aids,
+      .hiv {
          .d-flex {
             flex-direction: column;
          }
@@ -1228,7 +1231,6 @@ section {
          padding: 100px 0 100px;
       }
       .card {
-         margin-top: 60px;
          padding: 40px;
          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
          border: none;
@@ -1237,21 +1239,33 @@ section {
          }
       }
    }
-   .aids-content {
-      .card {
-         padding: 40px;
-         margin-right: 40px;
-         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-         border: none;
-         &:hover {
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
-         }
-         @media (max-width: 992px) {
-            margin-right: 0;
-            margin-bottom: 40px;
-         }
+
+   .aids .card,
+   .hiv .card {
+      padding: 40px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      border: none;
+      &:hover {
+         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
       }
    }
+
+   .aids .card {
+      margin-right: 40px;
+      @media (max-width: 992px) {
+         margin-right: 0;
+         margin-bottom: 40px;
+      }
+   }
+
+   .hiv .card {
+      margin-left: 40px;
+      @media (max-width: 992px) {
+         margin-left: 0;
+         margin-top: 40px;
+      }
+   }
+
    .brochures {
       h5 {
          margin-top: 0;
@@ -1355,11 +1369,14 @@ section {
                margin-left: 20px;
             }
          }
-      }
-
-      .toolip-question {
-         background-color: red;
-         color: greenyellow;
+         .list-akkordeon {
+            color: #848484;
+            margin-top: 16px;
+            li {
+               padding: 0;
+               margin-left: 36px;
+            }
+         }
       }
 
       .w-link {
@@ -1868,6 +1885,7 @@ section {
       padding: 0;
    }
 }
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -2128,12 +2146,26 @@ footer {
    padding: 60px 0 60px;
    font-family: 'Raleway', sans-serif;
    font-size: 14px;
+   font-weight: 600;
    color: #444;
    box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 
    img {
+      display: block;
+      margin: 20px auto;
       width: 100%;
-      max-width: 300px;
+      max-width: 200px;
+   }
+
+   a {
+      color: #444;
+      &:hover {
+         color: #444;
+
+         i {
+            color: var(--color-blue-2);
+         }
+      }
    }
 
    i {
@@ -2141,12 +2173,29 @@ footer {
       font-size: 32px;
       text-align: center;
       color: var(--color-blue-1);
-      cursor: pointer;
-      margin-bottom: 20px;
+      margin: 16px 0 16px;
    }
 
-   .col {
-      border: 1px dashed brown;
+   .border-logo {
+      display: grid;
+      height: 100%;
+      border-right: 1px solid #d1d1d1;
+      border-bottom: 0px solid #d1d1d1;
+      @media (max-width: 992px) {
+         border-right: 0px solid #d1d1d1;
+         border-bottom: 1px solid #d1d1d1;
+      }
+   }
+
+   .card-kontact {
+      padding: 16px 0;
+      margin: 16px 0;
+      border-radius: 10px;
+      min-height: 200px;
+      box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.1);
+      &:hover {
+         box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.2);
+      }
    }
 }
 

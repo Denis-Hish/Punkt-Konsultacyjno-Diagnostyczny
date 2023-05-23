@@ -60,20 +60,20 @@ const Header = () => {
       };
 
       // Scroll with offset on links with a class name .scrollto
-      const handleLinkClick = (e) => {
-         if (e.target.hash) {
-            e.preventDefault();
+      // const handleLinkClick = (e) => {
+      //    if (e.target.hash) {
+      //       e.preventDefault();
 
-            let navbar = document.querySelector('#navbar');
-            if (navbar.classList.contains('navbar-mobile')) {
-               navbar.classList.remove('navbar-mobile');
-               let navbarToggle = document.querySelector('.mobile-nav-toggle');
-               navbarToggle.classList.toggle('bi-list');
-               navbarToggle.classList.toggle('bi-x');
-            }
-            scrollto(e.target.hash);
-         }
-      };
+      //       let navbar = document.querySelector('#navbar');
+      //       if (navbar.classList.contains('navbar-mobile')) {
+      //          navbar.classList.remove('navbar-mobile');
+      //          let navbarToggle = document.querySelector('.mobile-nav-toggle');
+      //          navbarToggle.classList.toggle('bi-list');
+      //          navbarToggle.classList.toggle('bi-x');
+      //       }
+      //       scrollto(e.target.hash);
+      //    }
+      // };
 
       // Scroll with offset on page load with hash links in the url
       const handleLoad = () => {
@@ -85,11 +85,11 @@ const Header = () => {
          }
       };
 
-      document.addEventListener('click', handleLinkClick, true);
+      // document.addEventListener('click', handleLinkClick, true);
       window.addEventListener('load', handleLoad);
 
       return () => {
-         document.removeEventListener('click', handleLinkClick, true);
+         // document.removeEventListener('click', handleLinkClick, true);
          window.removeEventListener('load', handleLoad);
       };
    }, []);
@@ -99,6 +99,15 @@ const Header = () => {
    useEffect(() => {
       window.scrollTo(0, 0);
    }, [location.pathname]);
+
+   // Close mobile menu on click
+   const handleMobileNavItemClick = () => {
+      const navBar = document.querySelector('#navbar');
+      navBar.classList.remove('navbar-mobile');
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      mobileNavToggle.classList.remove('bi-x');
+      mobileNavToggle.classList.add('bi-list');
+   };
 
    const index = 'index.html';
 
@@ -125,42 +134,42 @@ const Header = () => {
                <nav id="navbar" className="navbar order-last order-lg-0">
                   <ul>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/">
+                        <NavLink className="nav-link scrollto" to="/" onClick={handleMobileNavItemClick}>
                            STRONA GŁÓWNA
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/news">
+                        <NavLink className="nav-link scrollto" to="/news" onClick={handleMobileNavItemClick}>
                            AKTUALNOŚCI
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/what">
+                        <NavLink className="nav-link scrollto" to="/what" onClick={handleMobileNavItemClick}>
                            HIV I AIDS
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/how">
+                        <NavLink className="nav-link scrollto" to="/how" onClick={handleMobileNavItemClick}>
                            SPOSOBY ZAKAŻENIA
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/hiv">
+                        <NavLink className="nav-link scrollto" to="/hiv" onClick={handleMobileNavItemClick}>
                            TEST NA OBECNOŚĆ HIV
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/treatments">
+                        <NavLink className="nav-link scrollto" to="/treatments" onClick={handleMobileNavItemClick}>
                            LECZENIE HIV/AIDS
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/diseases">
+                        <NavLink className="nav-link scrollto" to="/diseases" onClick={handleMobileNavItemClick}>
                            INNE ZAKAŻENIA I CHOROBY
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/materials">
+                        <NavLink className="nav-link scrollto" to="/materials" onClick={handleMobileNavItemClick}>
                            MATERIAŁY EDUKACYJNE
                         </NavLink>
                      </li>

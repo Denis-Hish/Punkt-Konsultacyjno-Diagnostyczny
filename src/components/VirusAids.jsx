@@ -1,6 +1,5 @@
 import React from 'react';
 
-import image1 from './../img/gallery/gallery-3.jpg';
 import image2 from './../img/gallery/gallery-4.jpg';
 
 const VirusAids = () => {
@@ -22,7 +21,7 @@ const VirusAids = () => {
                            jest znaczne spowolnienie postępu zakażenia, poprawa jakości życia z HIV i wydłużenie życia.
                         </p>
                      </div>
-                     <img src={image2} alt="" />
+                     <img src={image2} alt="Image" />
                   </div>
                   <div className="text-center">
                      <a

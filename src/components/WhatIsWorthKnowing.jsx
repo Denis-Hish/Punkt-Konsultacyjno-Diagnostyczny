@@ -5,8 +5,6 @@ import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import doc1 from './../doc/2/zalecenia_2022.pdf';
 
 const WhatIsWorthKnowing = () => {
-   // const tooltipText =
-   //    'Zasady opieki nad osobami zakażonymi HIV. Zalecenia Polskiego Towarzystwa Naukowego AIDS2022, s.11 dostęp 10.11.2022';
    return (
       <section id="faq" className="what-is-worth-knowing faq">
          <div className="container">
@@ -19,9 +17,9 @@ const WhatIsWorthKnowing = () => {
                <ul>
                   <li data-aos="fade-up">
                      <i className="bx bx-help-circle icon-help"></i>
-                     <a data-bs-toggle="collapse" className="collapse" data-bs-target="#faq-list-1">
-                        Co to jest "test na HIV"?<i className="bx bx-chevron-down icon-close"></i>
-                        <i className="bx bx-chevron-up icon-show"></i>
+                     <a data-bs-toggle="collapse" className="collapsed" data-bs-target="#faq-list-1">
+                        Co to jest "test na HIV"?<i className="bx bx-chevron-down icon-show"></i>
+                        <i className="bx bx-chevron-up icon-close"></i>
                      </a>
                      <div id="faq-list-1" className="collapse" data-bs-parent=".faq-list">
                         <p>Ten test nie wykrywa samego wirusa HIV, nie wykrywa też AIDS.</p>
@@ -32,9 +30,9 @@ const WhatIsWorthKnowing = () => {
                         </p>
                         <p>We wszystkich laboratoriach wykonywane są tak zwane testy przesiewowe.</p>
                         <p>
-                           (…) W ramach laboratoryjnej diagnostyki zakażenia HIV zaleca się stosowanie testów
-                           serologicznych tzw. IV generacji, które umożliwiają wykrycie antygenu p24 HIV (typowo po 2
-                           tygodniach od zakażenia) oraz przeciwciał anty-HIV 1/2 (po 4-12 tygodniach od zakażenia).
+                           W ramach laboratoryjnej diagnostyki zakażenia HIV zaleca się stosowanie testów serologicznych
+                           tzw. IV generacji, które umożliwiają wykrycie antygenu p24 HIV (typowo po 2 tygodniach od
+                           zakażenia) oraz przeciwciał anty-HIV 1/2 (po 4-12 tygodniach od zakażenia).
                         </p>
                         <p>
                            Obecnie nie zaleca się stosowania w laboratoryjnych badaniach przesiewowych testów tzw. III
@@ -47,7 +45,7 @@ const WhatIsWorthKnowing = () => {
                            <OverlayTrigger
                               placement="top"
                               overlay={
-                                 <Tooltip className="toolip-question">
+                                 <Tooltip>
                                     Zasady opieki nad osobami zakażonymi HIV. Zalecenia Polskiego Towarzystwa Naukowego
                                     AIDS2022, s.11 dostęp 10.11.2022
                                  </Tooltip>
@@ -146,13 +144,11 @@ const WhatIsWorthKnowing = () => {
                            <u>Każdy kto:</u>
                         </p>
                         <p className="fst-italic">- kiedykolwiek miał kontakt seksualny:</p>
-                        <p>
-                           <ul>
-                              <li>• z przypadkową osobą/osobami,</li>
-                              <li>• z osobą zakażoną HIV,</li>
-                              <li>• z partnerami/partnerkami mającymi wielu partnerów seksualnych,</li>
-                           </ul>
-                        </p>
+                        <ul className="list-akkordeon">
+                           <li>• z przypadkową osobą/osobami,</li>
+                           <li>• z osobą zakażoną HIV,</li>
+                           <li>• z partnerami/partnerkami mającymi wielu partnerów seksualnych,</li>
+                        </ul>
                         <p className="fst-italic">- miał wielu partnerów/partnerek seksualnych,</p>
                         <p className="fst-italic">- podczas kontaktów seksualnych nie stosował prezerwatyw,</p>
                         <p className="fst-italic">- przebył jakąś z chorób przenoszonych drogą płciową,</p>

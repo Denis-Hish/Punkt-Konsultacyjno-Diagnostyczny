@@ -1131,16 +1131,20 @@ section {
   background-color: rgba(25, 121, 204, 0.95);
 }
 @media (max-width: 992px) {
-  .what-is .aids .d-flex {
+  .what-is .aids .d-flex,
+  .what-is .hiv .d-flex {
     flex-direction: column;
   }
-  .what-is .aids img {
+  .what-is .aids img,
+  .what-is .hiv img {
     width: 100%;
   }
-  .what-is .aids p:nth-child(odd) {
+  .what-is .aids p:nth-child(odd),
+  .what-is .hiv p:nth-child(odd) {
     margin-right: 0;
   }
-  .what-is .aids p:nth-child(even) {
+  .what-is .aids p:nth-child(even),
+  .what-is .hiv p:nth-child(even) {
     margin-left: 0;
   }
 }
@@ -1177,7 +1181,6 @@ section {
   padding: 100px 0 100px;
 }
 .what-is .hiv .card {
-  margin-top: 60px;
   padding: 40px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   border: none;
@@ -1185,19 +1188,32 @@ section {
 .what-is .hiv .card:hover {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
-.what-is .aids-content .card {
+.what-is .aids .card,
+.what-is .hiv .card {
   padding: 40px;
-  margin-right: 40px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   border: none;
 }
-.what-is .aids-content .card:hover {
+.what-is .aids .card:hover,
+.what-is .hiv .card:hover {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
+.what-is .aids .card {
+  margin-right: 40px;
+}
 @media (max-width: 992px) {
-  .what-is .aids-content .card {
+  .what-is .aids .card {
     margin-right: 0;
     margin-bottom: 40px;
+  }
+}
+.what-is .hiv .card {
+  margin-left: 40px;
+}
+@media (max-width: 992px) {
+  .what-is .hiv .card {
+    margin-left: 0;
+    margin-top: 40px;
   }
 }
 .what-is .brochures h5 {
@@ -1295,9 +1311,13 @@ section {
   padding: 0;
   margin-left: 20px;
 }
-.what-is .what-is-worth-knowing .toolip-question {
-  background-color: red;
-  color: greenyellow;
+.what-is .what-is-worth-knowing .faq-list .list-akkordeon {
+  color: #848484;
+  margin-top: 16px;
+}
+.what-is .what-is-worth-knowing .faq-list .list-akkordeon li {
+  padding: 0;
+  margin-left: 36px;
 }
 .what-is .what-is-worth-knowing .w-link {
   display: inline-block;
@@ -1968,23 +1988,53 @@ footer {
   padding: 60px 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
+  font-weight: 600;
   color: #444;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
 footer img {
+  display: block;
+  margin: 20px auto;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
+}
+footer a {
+  color: #444;
+}
+footer a:hover {
+  color: #444;
+}
+footer a:hover i {
+  color: var(--color-blue-2);
 }
 footer i {
   display: block;
   font-size: 32px;
   text-align: center;
   color: var(--color-blue-1);
-  cursor: pointer;
-  margin-bottom: 20px;
+  margin: 16px 0 16px;
 }
-footer .col {
-  border: 1px dashed brown;
+footer .border-logo {
+  display: grid;
+  height: 100%;
+  border-right: 1px solid #d1d1d1;
+  border-bottom: 0px solid #d1d1d1;
+}
+@media (max-width: 992px) {
+  footer .border-logo {
+    border-right: 0px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+  }
+}
+footer .card-kontact {
+  padding: 16px 0;
+  margin: 16px 0;
+  border-radius: 10px;
+  min-height: 200px;
+  box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.1);
+}
+footer .card-kontact:hover {
+  box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.2);
 }
 
 /*--------------------------------------------------------------
