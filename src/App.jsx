@@ -9,7 +9,7 @@ import 'animate.css';
 import Header from './components/Header';
 
 import Home from './pages/Home';
-import News from './pages/News';
+import NewsPage from './pages/NewsPage';
 import WhatIs from './pages/WhatIs';
 import HowCan from './pages/HowCan';
 import HivTest from './pages/HivTest';
@@ -29,7 +29,7 @@ const App = () => {
 
          <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/news" element={<News />} />
+            <Route path="/news" element={<NewsPage />} />
             <Route path="/what" element={<WhatIs />} />
             <Route path="/how" element={<HowCan />} />
             <Route path="/hiv" element={<HivTest />} />
