@@ -1,10 +1,16 @@
 import React from 'react';
 
+import AccordionComponent from '../components/Accordion';
+
 const Hiv_Test = () => {
    return (
-      <div className="delete_class">
-         <h1>HivTest page</h1>
-      </div>
+      <section>
+         <div className="container">
+            <div className="section-title mt-10">
+               <h2>HivTest page</h2>
+            </div>
+         </div>
+      </section>
    );
 };
 

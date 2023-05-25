@@ -2,9 +2,13 @@ import React from 'react';
 
 const Diseases = () => {
    return (
-      <div className="delete_class">
-         <h1>Diseases page</h1>
-      </div>
+      <section>
+         <div className="container">
+            <div className="section-title mt-10">
+               <h2>Diseases page</h2>
+            </div>
+         </div>
+      </section>
    );
 };
 

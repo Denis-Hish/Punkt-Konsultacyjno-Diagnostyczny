@@ -2,9 +2,13 @@ import React from 'react';
 
 const Materials = () => {
    return (
-      <div className="delete_class">
-         <h1>Materials page</h1>
-      </div>
+      <section>
+         <div className="container">
+            <div className="section-title mt-10">
+               <h2>Materials page</h2>
+            </div>
+         </div>
+      </section>
    );
 };
 

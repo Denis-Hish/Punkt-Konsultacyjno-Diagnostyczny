@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Pagination from './Pagination';
+import Pagination from '../components/Pagination';
 
 // Images
 import Image1 from './../img/1-horizontal.jpg';
@@ -18,13 +18,13 @@ const News = () => {
    return (
       <section className="news section-bg">
          <div className="container">
-            <div className="section-title">
+            <div className="section-title mt-10">
                <h2>AKTUALNOŚCI</h2>
             </div>
 
             <div className="articles row g-3">
                <div className="col-12 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="post">
                      <div className="card">
                         <div className="image-box">
                            <img src={Image1} alt="Image" />
@@ -38,11 +38,11 @@ const News = () => {
                            </p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </div>
 
                <div className="col-12 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="post">
                      <div className="card">
                         <div className="image-box">
                            <img src={Image2} alt="Image" />
@@ -53,11 +53,11 @@ const News = () => {
                            </p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </div>
 
                <div className="col-12 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="post">
                      <div className="card">
                         <div className="image-box">
                            <img src={Image3} alt="Image" />
@@ -76,11 +76,11 @@ const News = () => {
                            </p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </div>
 
                <div className="col-12 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="post">
                      <div className="card">
                         <div className="image-box">
                            <img src={Image4} alt="Image" />
@@ -93,11 +93,11 @@ const News = () => {
                            </p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </div>
 
                <div className="col-12 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="post">
                      <div className="card">
                         <div className="image-box">
                            <img src={Image5} alt="Image" />
@@ -110,11 +110,11 @@ const News = () => {
                            </p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </div>
 
                <div className="col-12 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="post">
                      <div className="card">
                         <div className="image-box">
                            <img src={Image6} alt="Image" />
@@ -127,11 +127,11 @@ const News = () => {
                            </p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </div>
 
                <div className="col-12 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="post">
                      <div className="card">
                         <div className="image-box">
                            <img src={Image7} alt="Image" />
@@ -144,11 +144,11 @@ const News = () => {
                            </p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </div>
 
                <div className="col-12 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="post">
                      <div className="card">
                         <div className="image-box">
                            <img src={Image8} alt="Image" />
@@ -161,11 +161,11 @@ const News = () => {
                            </p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </div>
 
                <div className="col-12 col-md-6 col-lg-4">
-                  <a href="#">
+                  <Link to="post">
                      <div className="card">
                         <div className="image-box">
                            <img src={Image9} alt="Image" />
@@ -178,12 +178,9 @@ const News = () => {
                            </p>
                         </div>
                      </div>
-                  </a>
+                  </Link>
                </div>
             </div>
-            <button className="btn">
-               <Link to="/post">Post page</Link>
-            </button>
          </div>
          <Pagination />
       </section>

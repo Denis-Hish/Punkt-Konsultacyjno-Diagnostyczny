@@ -9,7 +9,8 @@ import 'animate.css';
 import Header from './components/Header';
 
 import Home from './pages/Home';
-import NewsPage from './pages/NewsPage';
+import News from './pages/News';
+import Post from './pages/Post';
 import WhatIs from './pages/WhatIs';
 import HowCan from './pages/HowCan';
 import HivTest from './pages/HivTest';
@@ -29,13 +30,17 @@ const App = () => {
 
          <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/news" element={<NewsPage />} />
-            <Route path="/what" element={<WhatIs />} />
-            <Route path="/how" element={<HowCan />} />
-            <Route path="/hiv" element={<HivTest />} />
-            <Route path="/treatments" element={<Treatments />} />
-            <Route path="/diseases" element={<Diseases />} />
-            <Route path="/materials" element={<Materials />} />
+            <Route path="news" element={<News />} />
+            <Route path="news/post" element={<Post />} />
+            {/* <Route exact path="news" element={<News />}>
+               <Route path="post" element={<Post />} />
+            </Route> */}
+            <Route path="what" element={<WhatIs />} />
+            <Route path="how" element={<HowCan />} />
+            <Route path="hiv" element={<HivTest />} />
+            <Route path="treatments" element={<Treatments />} />
+            <Route path="diseases" element={<Diseases />} />
+            <Route path="materials" element={<Materials />} />
             <Route path="*" element={<Notfoundpage />} />
          </Routes>
 

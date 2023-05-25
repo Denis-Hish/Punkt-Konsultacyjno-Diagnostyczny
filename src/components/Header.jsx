@@ -139,37 +139,37 @@ const Header = () => {
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/news" onClick={handleMobileNavItemClick}>
+                        <NavLink className="nav-link scrollto" to="news" onClick={handleMobileNavItemClick}>
                            AKTUALNOŚCI
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/what" onClick={handleMobileNavItemClick}>
+                        <NavLink className="nav-link scrollto" to="what" onClick={handleMobileNavItemClick}>
                            HIV I AIDS
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/how" onClick={handleMobileNavItemClick}>
+                        <NavLink className="nav-link scrollto" to="how" onClick={handleMobileNavItemClick}>
                            SPOSOBY ZAKAŻENIA
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/hiv" onClick={handleMobileNavItemClick}>
+                        <NavLink className="nav-link scrollto" to="hiv" onClick={handleMobileNavItemClick}>
                            TEST NA OBECNOŚĆ HIV
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/treatments" onClick={handleMobileNavItemClick}>
+                        <NavLink className="nav-link scrollto" to="treatments" onClick={handleMobileNavItemClick}>
                            LECZENIE HIV/AIDS
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/diseases" onClick={handleMobileNavItemClick}>
+                        <NavLink className="nav-link scrollto" to="diseases" onClick={handleMobileNavItemClick}>
                            INNE ZAKAŻENIA I CHOROBY
                         </NavLink>
                      </li>
                      <li>
-                        <NavLink className="nav-link scrollto" to="/materials" onClick={handleMobileNavItemClick}>
+                        <NavLink className="nav-link scrollto" to="materials" onClick={handleMobileNavItemClick}>
                            MATERIAŁY EDUKACYJNE
                         </NavLink>
                      </li>

@@ -47,6 +47,13 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Page margins at the top
+--------------------------------------------------------------*/
+.mt-10 {
+  margin-top: 10rem;
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
@@ -575,6 +582,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: var(--color-blue-3);
+  text-transform: uppercase;
 }
 
 .section-title h2::before {
@@ -1050,6 +1058,7 @@ section {
 .what-is img {
   width: 30%;
   border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .what-is h5 {
   font-family: "Raleway", sans-serif;
@@ -1223,6 +1232,7 @@ section {
 .what-is .brochures .video-box {
   background: url("../img/video.png") center center no-repeat;
   background-size: cover;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   min-height: 350px;
   border-radius: 5px;
 }
@@ -1368,9 +1378,6 @@ section {
 .news {
   padding-bottom: 30px;
 }
-.news .section-title {
-  margin-top: 10rem;
-}
 .news .articles .card.border-none {
   border: none;
 }
@@ -1387,7 +1394,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 .news .articles .card:hover .image-box img {
-  transform: scale(1.06) rotate(1deg);
+  transform: scale(1.03);
 }
 .news .articles .card .image-box {
   height: 16rem;
@@ -1426,6 +1433,34 @@ section {
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
+}
+
+/*--------------------------------------------------------------
+# Post
+--------------------------------------------------------------*/
+.post .post-card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.post .post-image {
+  width: 30rem;
+  height: 20rem;
+  margin: 0.3rem 1rem 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  float: left;
+}
+.post .post-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post .post-text p {
+  text-indent: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -2152,15 +2187,4 @@ footer .card-kontact:hover {
 }
 .notfoundpage h4 {
   font-size: 2rem;
-}
-
-.delete_class h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  font-size: 76px;
-  font-weight: 700;
-  color: brown;
 }/*# sourceMappingURL=style.css.map */
