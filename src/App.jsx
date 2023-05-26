@@ -18,7 +18,7 @@ import Treatments from './pages/Treatments';
 import Diseases from './pages/Diseases';
 import Materials from './pages/Materials';
 
-import Notfoundpage from './pages/Notfoundpage';
+import Notfoundpage from './pages/404';
 import Footer from './components/Footer';
 import BtnUp from './components/BtnUp';
 import Preloader from './components/Preloader';
