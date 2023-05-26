@@ -9,7 +9,7 @@ import './../vendor/remixicon/remixicon.css';
 import './../vendor/swiper/swiper-bundle.min.css';
 
 // Vendor JS Files
-import '../vendor/bootstrap/js/bootstrap.bundle.min.js'; // аккордеон
+// import '../vendor/bootstrap/js/bootstrap.bundle.min.js'; // аккордеон
 // import '../vendor/purecounter/purecounter_vanilla.js'; // счётчик
 // import '../vendor/glightbox/js/glightbox.min.js'; //галерея изображений
 // import '../vendor/swiper/swiper-bundle.min.js'; // свайпер

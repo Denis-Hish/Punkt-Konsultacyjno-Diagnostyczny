@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
 * Template Name: Medilab
 * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -1063,9 +1064,12 @@ section {
 .what-is h5 {
   font-family: "Raleway", sans-serif;
   margin-top: 10rem;
-  color: #2c4964;
+  color: var(--color-white-1);
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
+  background-color: var(--color-blue-1);
+  border-radius: 5px;
+  padding: 20px;
 }
 .what-is .aids p:nth-child(odd) {
   margin-right: 2rem;
@@ -1390,11 +1394,14 @@ section {
 }
 .accordion i {
   font-size: 24px;
-  color: #76b5ee;
+  color: var(--color-blue-2);
   margin-right: 10px;
 }
 .accordion .bi-question-circle {
   margin-left: 10px;
+}
+.accordion .accordion-button {
+  padding: 1.25rem 1.5rem;
 }
 .accordion .accordion-button:focus {
   box-shadow: none;
@@ -1500,6 +1507,81 @@ section {
 }
 .post .post-text p {
   text-indent: 30px;
+}
+
+/*--------------------------------------------------------------
+# How can
+--------------------------------------------------------------*/
+.how-can {
+  counter-reset: section; /* Устанавливает значение счётчика, равным 0 */
+}
+.how-can .card {
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: var(--color-background);
+}
+.how-can .text-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.how-can .text-block:last-child {
+  margin-bottom: 0;
+}
+.how-can .text-block li::marker {
+  color: var(--color-blue-1);
+}
+.how-can .text-block .text {
+  padding: 0 5rem;
+  flex-grow: 1;
+}
+.how-can .number {
+  flex-shrink: 0;
+  margin-top: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  color: var(--color-white-1);
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: var(--color-blue-1);
+  outline: 3px solid var(--color-blue-1);
+  border: 3px solid var(--color-white-1);
+  position: relative;
+}
+.how-can .number::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  counter-increment: section; /* Инкрементирует счётчик*/
+  content: counter(section); /* Отображает текущее значение счётчика */
+}
+.how-can .image-block img {
+  width: 100px;
+}
+.how-can .image-block i {
+  font-size: 4rem;
+}
+.how-can i {
+  font-size: 3rem;
+  color: var(--color-blue-1);
+}
+.how-can i:hover {
+  color: var(--color-blue-2);
+}
+.how-can .language {
+  list-style: none;
+}
+.how-can .language li {
+  margin-bottom: 1rem;
+}
+.how-can .language a {
+  color: var(--color-text);
+}
+.how-can .flag {
+  margin-right: 1rem;
+  width: 50px;
 }
 
 /*--------------------------------------------------------------

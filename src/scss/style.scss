@@ -1104,9 +1104,12 @@ section {
    h5 {
       font-family: 'Raleway', sans-serif;
       margin-top: 10rem;
-      color: #2c4964;
+      color: var(--color-white-1);
       font-size: 24px;
-      font-weight: 700;
+      font-weight: 400;
+      background-color: var(--color-blue-1);
+      border-radius: 5px;
+      padding: 20px;
    }
 
    .aids {
@@ -1458,7 +1461,7 @@ section {
 
    i {
       font-size: 24px;
-      color: #76b5ee;
+      color: var(--color-blue-2);
       margin-right: 10px;
    }
 
@@ -1467,6 +1470,7 @@ section {
    }
 
    .accordion-button {
+      padding: 1.25rem 1.5rem;
       &:focus {
          box-shadow: none;
       }
@@ -1591,6 +1595,97 @@ section {
       p {
          text-indent: 30px;
       }
+   }
+}
+
+/*--------------------------------------------------------------
+# How can
+--------------------------------------------------------------*/
+.how-can {
+   counter-reset: section; /* Устанавливает значение счётчика, равным 0 */
+
+   .card {
+      padding: 2rem;
+      margin: 2rem 0;
+      background-color: var(--color-background);
+   }
+
+   .text-block {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+      &:last-child {
+         margin-bottom: 0;
+      }
+
+      li {
+         &::marker {
+            color: var(--color-blue-1);
+         }
+      }
+
+      .text {
+         padding: 0 5rem;
+         flex-grow: 1;
+      }
+   }
+
+   .number {
+      flex-shrink: 0;
+      margin-top: 1rem;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100%;
+      color: var(--color-white-1);
+      font-size: 2rem;
+      font-weight: 500;
+      background-color: var(--color-blue-1);
+      outline: 3px solid var(--color-blue-1); // внешняя
+      border: 3px solid var(--color-white-1); // внутренняя
+      position: relative;
+      &::before {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         counter-increment: section; /* Инкрементирует счётчик*/
+         content: counter(section); /* Отображает текущее значение счётчика */
+      }
+   }
+
+   .image-block {
+      img {
+         width: 100px;
+      }
+      i {
+         font-size: 4rem;
+      }
+   }
+
+   i {
+      font-size: 3rem;
+      color: var(--color-blue-1);
+      &:hover {
+         color: var(--color-blue-2);
+      }
+   }
+
+   .language {
+      list-style: none;
+      // display: flex;
+      // align-items: center;
+      // gap: 1rem;
+      li {
+         margin-bottom: 1rem;
+      }
+      a {
+         color: var(--color-text);
+      }
+   }
+
+   .flag {
+      margin-right: 1rem;
+      width: 50px;
    }
 }
 
