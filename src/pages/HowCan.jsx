@@ -95,51 +95,90 @@ const How_Can = () => {
                </div>
             </div>
 
-            <div className="card">
-               <i className="bi bi-file-earmark-arrow-down"></i>
-
-               <p>
-                  Zapraszamy na stronę: https://aids.gov.pl/publikacje/203/ Do pobrania broszury z informacją, czym są
-                  zakażenie HIV i choroba AIDS, jak przenosi się wirus, jak temu zapobiec, jak wykonać testu w kierunku
-                  HIV.
-               </p>
-               <p>Broszurę można pobrać w językach:</p>
-               <ul className="language">
+            <div className="card card-file">
+               <div className="download-file">
+                  <i className="bi bi-file-earmark-arrow-down text-center mb-3"></i>
+               </div>
+               <div className="section-title">
+                  <h2>Czym są zakażenie HIV i choroba AIDS,</h2>
+                  <h5>jak przenosi się wirus, jak temu zapobiec, jak wykonać testu w kierunku HIV.</h5>
+               </div>
+               <a
+                  href="https://aids.gov.pl/hiv_aids/podstawowe_informacje/"
+                  class="more-btn mb-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  Dowiedz się więcej na stronę
+                  <i class="bx bx-chevron-right"></i>
+               </a>
+               <p className="text-center fst-italic">lub</p>
+               <p className="text-center fst-italic">zapraszamy do pobrania broszury z informacją</p>
+               <p className="text-center fst-italic">Broszurę można pobrać w językach:</p>
+               <ul className="language mt-3">
                   <li>
                      <a href={PLDoc} target="_blank" rel="noopener noreferrer">
-                        <img className="flag" src={PolandFlag} alt="Poland Flag" />
-                        polski
+                        <div className="card-lg">
+                           <img className="flag" src={PolandFlag} alt="Poland Flag" />
+                           polski
+                        </div>
                      </a>
                   </li>
                   <li>
                      <a href={ENDoc} target="_blank" rel="noopener noreferrer">
-                        <img className="flag" src={EnglishFlag} alt="English Flag" />
-                        angielski
+                        <div className="card-lg">
+                           <img className="flag" src={EnglishFlag} alt="English Flag" />
+                           angielski
+                        </div>
                      </a>
                   </li>
                   <li>
                      <a href={FRDoc} target="_blank" rel="noopener noreferrer">
-                        <img className="flag" src={FranceFlag} alt="France Flag" />
-                        francuski
+                        <div className="card-lg">
+                           <img className="flag" src={FranceFlag} alt="France Flag" />
+                           francuski
+                        </div>
                      </a>
                   </li>
                   <li>
-                     <img className="flag" src={UkraineFlag} alt="Ukraine Flag" />
-                     ukraiński
+                     <a href={UADoc} target="_blank" rel="noopener noreferrer">
+                        <div className="card-lg">
+                           <img className="flag" src={UkraineFlag} alt="Ukraine Flag" />
+                           ukraiński
+                        </div>
+                     </a>
                   </li>
                   <li>
-                     <img className="flag" src={GeorgiaFlag} alt="Georgia Flag" />
-                     gruziński
+                     <a href={GRDoc} target="_blank" rel="noopener noreferrer">
+                        <div className="card-lg">
+                           <img className="flag" src={GeorgiaFlag} alt="Georgia Flag" />
+                           gruziński
+                        </div>
+                     </a>
                   </li>
                   <li>
-                     <img className="flag" src={ArabicFlag} alt="Arabic Flag" />
-                     arabski
+                     <a href={ARDoc} target="_blank" rel="noopener noreferrer">
+                        <div className="card-lg">
+                           <img className="flag" src={ArabicFlag} alt="Arabic Flag" />
+                           arabski
+                        </div>
+                     </a>
                   </li>
                   <li>
-                     <img className="flag" src={RussiaFlag} alt="Russia Flag" />
-                     rosyjski
+                     <a href={RUDoc} target="_blank" rel="noopener noreferrer">
+                        <div className="card-lg">
+                           <img className="flag" src={RussiaFlag} alt="Russia Flag" />
+                           rosyjski
+                        </div>
+                     </a>
                   </li>
                </ul>
+
+               {/* <p>
+                  Zapraszamy na stronę: https://aids.gov.pl/publikacje/203/ lub do pobrania broszury z informacją, czym
+                  są zakażenie HIV i choroba AIDS, jak przenosi się wirus, jak temu zapobiec, jak wykonać testu w
+                  kierunku HIV.
+               </p> */}
             </div>
          </div>
       </section>

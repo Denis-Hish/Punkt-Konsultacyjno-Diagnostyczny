@@ -23,7 +23,7 @@ const VirusAids = () => {
                      </div>
                      <img src={image2} alt="Image" />
                   </div>
-                  <div className="text-center">
+                  <div className="text-center mt-5">
                      <a
                         href="https://aids.gov.pl/hiv_aids/podstawowe_informacje/"
                         className="more-btn"

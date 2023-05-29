@@ -11,7 +11,7 @@ const Brochures = () => {
                <div className="section-title">
                   <h2>Poniżej broszury informacyjne:</h2>
                </div>
-               <h5 className="text-center">
+               <h5 className="text-center brochures-content">
                   Film edukacyjny na temat HIV i AIDS, zawiera odpowiedzi na wiele pytań między innymi dotyczących tego,
                   jak przenosi się zakażenie, jak temu zapobiegać i kiedy należy rozważyć wykonanie testu w kierunku HIV
                </h5>
@@ -50,7 +50,7 @@ const Brochures = () => {
                               </p>
                            </div>
                         </a>
-                        <div className="text-center">
+                        <div className="text-center mt-5">
                            <a
                               href="https://aids.gov.pl/publikacje/168/"
                               className="more-btn"
