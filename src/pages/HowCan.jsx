@@ -10,6 +10,7 @@ import ArabicFlag from './../img/4/arabic.png';
 import RussiaFlag from './../img/4/russia-kakaha.png';
 
 // Documents
+import TestBrochure from './../doc/4/1test2zycia_ulotka_kobieta.pdf';
 import PLDoc from './../doc/4/broshura/PL.pdf';
 import ENDoc from './../doc/4/broshura/EN.pdf';
 import FRDoc from './../doc/4/broshura/FR.pdf';
@@ -23,7 +24,7 @@ const How_Can = () => {
       <section className="how-can">
          <div className="container">
             <div className="section-title mt-10">
-               <h2>JAK MOŻNA SIĘ ZAKAZIĆ HIV?</h2>
+               <h2 data-aos="fade-down">JAK MOŻNA SIĘ ZAKAZIĆ HIV?</h2>
                <p>
                   Istnieją tylko 3 drogi przenoszenia wirusa HIV. Od czasu trwania epidemii HIV/AIDS nie poznano innych
                   dróg przenoszenia zakażenia!
@@ -72,7 +73,7 @@ const How_Can = () => {
             </div>
 
             <div className="card">
-               <div className="text-block">
+               <div className="text-block mb-4">
                   <div className="number"></div>
                   <div className="text">
                      <h3>Przeniesienie wirusa z zakażonej HIV matki na jej dziecko</h3>
@@ -91,6 +92,17 @@ const How_Can = () => {
                   </div>
                   <div className="image-block">
                      <i className="bi bi-people"></i>
+                  </div>
+               </div>
+               <div className="text-block">
+                  <div className="text text-center">
+                     <p className="fst-italic">
+                        <b>Jeśli planujesz macierzyństwo lub jesteś w ciąży</b>
+                     </p>
+                     <a href={TestBrochure} class="more-btn" target="_blank" rel="noopener noreferrer">
+                        Ta informacja jest dla Ciebie
+                        <i class="bx bx-chevron-right"></i>
+                     </a>
                   </div>
                </div>
             </div>

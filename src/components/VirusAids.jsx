@@ -7,7 +7,7 @@ const VirusAids = () => {
       <>
          <div className="aids section-bg">
             <div className="container">
-               <h5>
+               <h5 data-aos="fade-in">
                   <b>AIDS</b> – od angielskiej nazwy acquired immunodeficiency syndrome, po polsku to zespół nabytego
                   upośledzenia odporności – końcowy etap zakażenia HIV, charakteryzujący się wystąpieniem chorób
                   definiujących AIDS, pojawiający się zwykle po wielu latach trwania infekcji HIV.
@@ -21,7 +21,7 @@ const VirusAids = () => {
                            jest znaczne spowolnienie postępu zakażenia, poprawa jakości życia z HIV i wydłużenie życia.
                         </p>
                      </div>
-                     <img src={image2} alt="Image" />
+                     <img src={image2} alt="Doctor" />
                   </div>
                   <div className="text-center mt-5">
                      <a

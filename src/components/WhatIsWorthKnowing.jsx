@@ -1,5 +1,4 @@
 import React from 'react';
-
 import AccordionComponent from './Accordion';
 
 const WhatIsWorthKnowing = () => {

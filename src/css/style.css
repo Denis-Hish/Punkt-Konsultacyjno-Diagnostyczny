@@ -991,6 +991,16 @@ section {
   font-size: 16px;
   font-weight: 500;
 }
+.invite .telephone-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.invite .telephone-time i {
+  font-size: 24px;
+  color: var(--color-blue-2);
+}
 
 /*--------------------------------------------------------------
 # What_Is
@@ -1166,14 +1176,14 @@ section {
 }
 .what-is .hiv {
   padding: 60px 0;
-  margin-top: -50px;
-  margin-bottom: -150px;
+  margin-top: -160px;
+  margin-bottom: -170px;
   background: url(../img/virus.png) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 .what-is .hiv .section-title {
-  padding: 100px 0 100px;
+  padding: 0 0 100px;
 }
 .what-is .hiv .card {
   padding: 40px;
@@ -1450,6 +1460,7 @@ section {
 .pagination .active > .page-link {
   background-color: var(--color-blue-1);
   border-color: var(--color-blue-1);
+  cursor: pointer;
 }
 .pagination .active > .page-link:hover {
   background-color: var(--color-blue-2);
@@ -1504,6 +1515,10 @@ section {
 .how-can .card:hover .image-block i {
   color: var(--color-blue-2);
 }
+.how-can .card:hover .number {
+  background-color: var(--color-blue-2);
+  outline: 3px solid var(--color-blue-2);
+}
 .how-can .text-block {
   display: flex;
   justify-content: space-between;
@@ -1532,6 +1547,7 @@ section {
   outline: 3px solid var(--color-blue-1);
   border: 3px solid var(--color-white-1);
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 .how-can .number::before {
   position: absolute;
@@ -1597,6 +1613,7 @@ section {
   outline: 3px solid var(--color-blue-1);
   border: 3px solid var(--color-white-1);
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 .how-can .download-file i {
   position: absolute;

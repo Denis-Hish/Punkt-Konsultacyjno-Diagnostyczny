@@ -5,7 +5,7 @@ const Treatments = () => {
       <section>
          <div className="container">
             <div className="section-title mt-10">
-               <h2>Treatments page</h2>
+               <h2 data-aos="fade-down">Treatments page</h2>
             </div>
          </div>
       </section>

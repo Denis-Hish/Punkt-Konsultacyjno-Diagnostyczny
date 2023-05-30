@@ -1,47 +1,17 @@
-import React from 'react';
+import Pagination from 'react-bootstrap/Pagination';
 
-const Pagination = () => {
+function PaginationComponent() {
    return (
-      <nav aria-label="Page navigation example">
-         <ul className="pagination justify-content-center mt-5">
-            <li className="page-item">
-               <a className="page-link" href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-               </a>
-            </li>
-            <li className="page-item active">
-               <a className="page-link" href="#">
-                  1
-               </a>
-            </li>
-            <li className="page-item">
-               <a className="page-link" href="#">
-                  2
-               </a>
-            </li>
-            <li className="page-item">
-               <a className="page-link" href="#">
-                  3
-               </a>
-            </li>
-            <li className="page-item">
-               <a className="page-link" href="#">
-                  4
-               </a>
-            </li>
-            <li className="page-item">
-               <a className="page-link" href="#">
-                  5
-               </a>
-            </li>
-            <li className="page-item">
-               <a className="page-link" href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-               </a>
-            </li>
-         </ul>
-      </nav>
+      <Pagination className="justify-content-center mt-5">
+         <Pagination.Prev />
+         <Pagination.Item active>{1}</Pagination.Item>
+         <Pagination.Item>{2}</Pagination.Item>
+         <Pagination.Item>{3}</Pagination.Item>
+         <Pagination.Item>{4}</Pagination.Item>
+         <Pagination.Item>{5}</Pagination.Item>
+         <Pagination.Next />
+      </Pagination>
    );
-};
+}
 
-export default Pagination;
+export default PaginationComponent;
