@@ -11,7 +11,7 @@ const Brochures = () => {
                <div className="section-title">
                   <h2 data-aos="fade-down">Poniżej broszury informacyjne:</h2>
                </div>
-               <h5 data-aos="fade-in" className="text-center brochures-content">
+               <h5 data-aos="fade-down" className="text-center brochures-content">
                   Film edukacyjny na temat HIV i AIDS, zawiera odpowiedzi na wiele pytań między innymi dotyczących tego,
                   jak przenosi się zakażenie, jak temu zapobiegać i kiedy należy rozważyć wykonanie testu w kierunku HIV
                </h5>
@@ -28,11 +28,14 @@ const Brochures = () => {
                            rel="noopener noreferrer"
                         ></a>
                      </div>
-                     <div
-                        data-aos="fade-left"
-                        className="icon-boxes text-cards col-xl-7 col-lg-6 d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
-                     >
-                        <a href={doc1} target="_blank" rel="noopener noreferrer">
+                     <div className="icon-boxes text-cards col-xl-7 col-lg-6 d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                        <a
+                           data-aos="fade-left"
+                           data-aos-delay="100"
+                           href={doc1}
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
                            <div className="icon-box icon-box-2 icon-box-2-bg-1">
                               <div className="icon">
                                  <i className="bi bi-file-pdf"></i>
@@ -45,7 +48,13 @@ const Brochures = () => {
                            </div>
                         </a>
 
-                        <a href={doc2} target="_blank" rel="noopener noreferrer">
+                        <a
+                           data-aos="fade-left"
+                           data-aos-delay="200"
+                           href={doc2}
+                           target="_blank"
+                           rel="noopener noreferrer"
+                        >
                            <div className="icon-box icon-box-2 icon-box-2-bg-2">
                               <div className="icon">
                                  <i className="bi bi-file-pdf"></i>

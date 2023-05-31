@@ -10,9 +10,11 @@ const Hero = () => {
             <h2 data-aos="fade-left" data-aos-delay="1000">
                do korzystania z poradnictwa i testowania w kierunku zakażenia wirusem HIV, HCV i kiły
             </h2>
-            <a data-aos="fade-in" href="#about" className="btn-get-started scrollto">
-               więcej szczegółów
-            </a>
+            <div data-aos="fade-in" data-aos-delay="1500">
+               <a href="#about" className="btn-get-started scrollto">
+                  więcej szczegółów
+               </a>
+            </div>
          </div>
       </section>
    );

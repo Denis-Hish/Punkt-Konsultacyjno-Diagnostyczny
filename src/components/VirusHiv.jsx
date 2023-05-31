@@ -47,8 +47,8 @@ const NameVirus = () => {
                   </div>
                </div>
                <div className="d-flex align-items-center mt-5">
-                  <img src={image1} alt="Doctor" />
-                  <div className="card">
+                  <img data-aos="fade-right" data-aos-anchor-placement="top-bottom" src={image1} alt="Doctor" />
+                  <div data-aos="fade-left" data-aos-anchor-placement="top-bottom" className="card">
                      <p>
                         Zakażenie nie powoduje żadnych objawów na skórze czy na błonach śluzowych, nie powoduje też
                         zmian w badaniach laboratoryjnych. Jeśli osoba zakażona nie zrobi sobie testu przez 8-10 lat

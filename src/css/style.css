@@ -48,10 +48,19 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Page margins at the top
+# Additional properties
 --------------------------------------------------------------*/
+.i-icon {
+  color: var(--color-blue-1);
+  font-size: 1.5rem;
+}
+
 .mt-10 {
   margin-top: 10rem;
+}
+
+.box-shadow {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 /*--------------------------------------------------------------
@@ -1511,6 +1520,7 @@ section {
   padding: 2rem;
   margin: 2rem 0;
   background-color: var(--color-background);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .how-can .card:hover .image-block i {
   color: var(--color-blue-2);
@@ -1548,6 +1558,7 @@ section {
   border: 3px solid var(--color-white-1);
   position: relative;
   transition: all 0.3s ease-in-out;
+  z-index: 5;
 }
 .how-can .number::before {
   position: absolute;
@@ -1557,12 +1568,20 @@ section {
   counter-increment: section; /* Инкрементирует счётчик*/
   content: counter(section); /* Отображает текущее значение счётчика */
 }
-.how-can .image-block img {
-  width: 100px;
+.how-can .image-block {
+  flex-shrink: 0;
+  margin-top: 0.75rem;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
 }
 .how-can .image-block i {
   font-size: 4rem;
   color: var(--color-blue-1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .how-can .language {
   list-style: none;
@@ -1645,6 +1664,49 @@ section {
   }
   .how-can .text-block .image-block {
     display: none;
+  }
+}
+
+/*--------------------------------------------------------------
+# Test HIV
+--------------------------------------------------------------*/
+.steps .title-carousel {
+  color: var(--color-blue-1);
+  font-weight: 500;
+}
+.steps .carousel-block {
+  display: flex;
+  margin: 2rem auto;
+  width: 70%;
+}
+.steps .carousel-block .carousel {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+.steps .carousel-block .carousel .carousel-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  left: 0;
+  height: 6rem;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.steps .carousel-block .carousel .carousel-caption p {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .steps .carousel-block {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .steps .carousel-caption p {
+    font-size: 0.8rem;
   }
 }
 
