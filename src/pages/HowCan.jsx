@@ -26,11 +26,11 @@ const How_Can = () => {
             <div className="section-title mt-10">
                <h2 data-aos="fade-down">JAK MOŻNA SIĘ ZAKAZIĆ HIV?</h2>
                <p>
-                  Istnieją tylko 3 drogi przenoszenia wirusa HIV. Od czasu
-                  trwania epidemii HIV/AIDS nie poznano innych dróg przenoszenia
-                  zakażenia!
+                  Istnieją tylko 3 drogi przenoszenia wirusa HIV. Od czasu trwania epidemii HIV/AIDS nie poznano innych
+                  dróg przenoszenia zakażenia!
                </p>
             </div>
+
             <div data-aos="fade-right" className="card">
                <div className="text-block">
                   <div className="number"></div>
@@ -38,21 +38,17 @@ const How_Can = () => {
                      <h3>Krew</h3>
                      <ul>
                         <li>
-                           Zakażenie przez krew może dotyczyć mogą osób
-                           używających wspólnie z innymi sprzętu do iniekcji w
-                           celu przyjmowania środków psychoaktywnych.
+                           Zakażenie przez krew może dotyczyć mogą osób używających wspólnie z innymi sprzętu do
+                           iniekcji w celu przyjmowania środków psychoaktywnych.
                         </li>
                         <li>
-                           Każda porcja krwi oddawanej w stacjach krwiodawstwa
-                           jest badana w kierunku zakażenia HIV, co w znacznym
-                           stopniu eliminuje ryzyko zakażenia. W Polsce od lat
-                           nie zdarzył się przypadek przeniesienia zakażenia
-                           poprzez transfuzję krwi i środków krwiopochodnych.
+                           Każda porcja krwi oddawanej w stacjach krwiodawstwa jest badana w kierunku zakażenia HIV, co
+                           w znacznym stopniu eliminuje ryzyko zakażenia. W Polsce od lat nie zdarzył się przypadek
+                           przeniesienia zakażenia poprzez transfuzję krwi i środków krwiopochodnych.
                         </li>
                         <li>
-                           Tatuaże, zabiegi akupunktury, przekłucia uszu czy
-                           innych części ciała muszą być wykonywane sterylnymi
-                           narzędziami.
+                           Tatuaże, zabiegi akupunktury, przekłucia uszu czy innych części ciała muszą być wykonywane
+                           sterylnymi narzędziami.
                         </li>
                      </ul>
                   </div>
@@ -68,10 +64,7 @@ const How_Can = () => {
                   <div className="text">
                      <h3>Kontakty seksualne</h3>
                      <ul>
-                        <li>
-                           Jeśli ktoś podejmuje kontakty seksualne z przygodnymi
-                           partnerami – ryzykuje!
-                        </li>
+                        <li>Jeśli ktoś podejmuje kontakty seksualne z przygodnymi partnerami – ryzykuje!</li>
                      </ul>
                   </div>
                   <div className="image-block">
@@ -84,30 +77,18 @@ const How_Can = () => {
                <div className="text-block mb-4">
                   <div className="number"></div>
                   <div className="text">
-                     <h3>
-                        Przeniesienie wirusa z zakażonej HIV matki na jej
-                        dziecko
-                     </h3>
+                     <h3>Przeniesienie wirusa z zakażonej HIV matki na jej dziecko</h3>
                      <ul>
                         <li>
-                           Ryzyko przeniesienia zakażenia z matki na dziecko
-                           można zmniejszyć do nieco ponad 1% jeśli kobieta:
+                           Ryzyko przeniesienia zakażenia z matki na dziecko można zmniejszyć do nieco ponad 1% jeśli
+                           kobieta:
                         </li>
                         <ul>
-                           <li>
-                              przyjmuje podczas ciąży przynajmniej jeden lek
-                              antyretrowirusowy,
-                           </li>
-                           <li>
-                              rozwiązanie ciąży następuje przez cesarskie
-                              cięcie,
-                           </li>
+                           <li>przyjmuje podczas ciąży przynajmniej jeden lek antyretrowirusowy,</li>
+                           <li>rozwiązanie ciąży następuje przez cesarskie cięcie,</li>
                            <li>noworodek nie jest karmiony piersią.</li>
                         </ul>
-                        <li>
-                           Jest to możliwe tylko wówczas, kiedy kobieta wie o
-                           swoim zakażeniu!
-                        </li>
+                        <li>Jest to możliwe tylko wówczas, kiedy kobieta wie o swoim zakażeniu!</li>
                      </ul>
                   </div>
                   <div className="image-block">
@@ -119,12 +100,7 @@ const How_Can = () => {
                      <p className="fst-italic">
                         <b>Jeśli planujesz macierzyństwo lub jesteś w ciąży</b>
                      </p>
-                     <a
-                        href={TestBrochure}
-                        className="more-btn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
+                     <a href={TestBrochure} className="more-btn" target="_blank" rel="noopener noreferrer">
                         Ta informacja jest dla Ciebie
                         <i className="bx bx-chevron-right"></i>
                      </a>
@@ -138,10 +114,7 @@ const How_Can = () => {
                </div>
                <div className="section-title">
                   <h2>Czym są zakażenie HIV i choroba AIDS,</h2>
-                  <h5>
-                     jak przenosi się wirus, jak temu zapobiec, jak wykonać
-                     testu w kierunku HIV.
-                  </h5>
+                  <h5>jak przenosi się wirus, jak temu zapobiec, jak wykonać testu w kierunku HIV.</h5>
                </div>
                <a
                   href="https://aids.gov.pl/hiv_aids/podstawowe_informacje/"
@@ -153,21 +126,13 @@ const How_Can = () => {
                   <i className="bx bx-chevron-right"></i>
                </a>
                <p className="text-center fst-italic">lub</p>
-               <p className="text-center fst-italic">
-                  zapraszamy do pobrania broszury z informacją
-               </p>
-               <p className="text-center fst-italic">
-                  Broszurę można pobrać w językach:
-               </p>
+               <p className="text-center fst-italic">zapraszamy do pobrania broszury z informacją</p>
+               <p className="text-center fst-italic">Broszurę można pobrać w językach:</p>
                <ul className="language mt-3">
                   <li data-aos="fade-down" data-aos-delay="100">
                      <a href={PLDoc} target="_blank" rel="noopener noreferrer">
                         <div className="card-lg">
-                           <img
-                              className="flag"
-                              src={PolandFlag}
-                              alt="Poland Flag"
-                           />
+                           <img className="flag" src={PolandFlag} alt="Poland Flag" />
                            polski
                         </div>
                      </a>
@@ -175,11 +140,7 @@ const How_Can = () => {
                   <li data-aos="fade-down" data-aos-delay="200">
                      <a href={ENDoc} target="_blank" rel="noopener noreferrer">
                         <div className="card-lg">
-                           <img
-                              className="flag"
-                              src={EnglishFlag}
-                              alt="English Flag"
-                           />
+                           <img className="flag" src={EnglishFlag} alt="English Flag" />
                            angielski
                         </div>
                      </a>
@@ -187,11 +148,7 @@ const How_Can = () => {
                   <li data-aos="fade-down" data-aos-delay="300">
                      <a href={FRDoc} target="_blank" rel="noopener noreferrer">
                         <div className="card-lg">
-                           <img
-                              className="flag"
-                              src={FranceFlag}
-                              alt="France Flag"
-                           />
+                           <img className="flag" src={FranceFlag} alt="France Flag" />
                            francuski
                         </div>
                      </a>
@@ -199,11 +156,7 @@ const How_Can = () => {
                   <li data-aos="fade-down" data-aos-delay="400">
                      <a href={UADoc} target="_blank" rel="noopener noreferrer">
                         <div className="card-lg">
-                           <img
-                              className="flag"
-                              src={UkraineFlag}
-                              alt="Ukraine Flag"
-                           />
+                           <img className="flag" src={UkraineFlag} alt="Ukraine Flag" />
                            ukraiński
                         </div>
                      </a>
@@ -211,11 +164,7 @@ const How_Can = () => {
                   <li data-aos="fade-down" data-aos-delay="500">
                      <a href={GRDoc} target="_blank" rel="noopener noreferrer">
                         <div className="card-lg">
-                           <img
-                              className="flag"
-                              src={GeorgiaFlag}
-                              alt="Georgia Flag"
-                           />
+                           <img className="flag" src={GeorgiaFlag} alt="Georgia Flag" />
                            gruziński
                         </div>
                      </a>
@@ -223,11 +172,7 @@ const How_Can = () => {
                   <li data-aos="fade-down" data-aos-delay="600">
                      <a href={ARDoc} target="_blank" rel="noopener noreferrer">
                         <div className="card-lg">
-                           <img
-                              className="flag"
-                              src={ArabicFlag}
-                              alt="Arabic Flag"
-                           />
+                           <img className="flag" src={ArabicFlag} alt="Arabic Flag" />
                            arabski
                         </div>
                      </a>
@@ -235,22 +180,12 @@ const How_Can = () => {
                   <li data-aos="fade-down" data-aos-delay="700">
                      <a href={RUDoc} target="_blank" rel="noopener noreferrer">
                         <div className="card-lg">
-                           <img
-                              className="flag"
-                              src={RussiaFlag}
-                              alt="Russia Flag"
-                           />
+                           <img className="flag" src={RussiaFlag} alt="Russia Flag" />
                            rosyjski
                         </div>
                      </a>
                   </li>
                </ul>
-
-               {/* <p>
-                  Zapraszamy na stronę: https://aids.gov.pl/publikacje/203/ lub do pobrania broszury z informacją, czym
-                  są zakażenie HIV i choroba AIDS, jak przenosi się wirus, jak temu zapobiec, jak wykonać testu w
-                  kierunku HIV.
-               </p> */}
             </div>
          </div>
       </section>

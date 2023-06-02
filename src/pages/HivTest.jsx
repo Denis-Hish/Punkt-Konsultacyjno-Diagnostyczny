@@ -99,7 +99,9 @@ const Hiv_Test = () => {
          <section className="brochure-question">
             <div className="container">
                <div className="section-title">
-                  <h2 className="text-center">Poniżej ulotka</h2>
+                  <h2 data-aos="fade-down" className="text-center">
+                     Poniżej ulotka
+                  </h2>
                </div>
 
                <p className="text-center fst-italic">
@@ -107,7 +109,7 @@ const Hiv_Test = () => {
                   <b> po rozpoznaniu zakażenia HIV</b>
                </p>
 
-               <div className="text-center brochure-btn download-file">
+               <div data-aos="fade-down" data-aos-delay="100" className="text-center brochure-btn download-file">
                   <a href={BrochureDoc} target="_blank" rel="noopener noreferrer">
                      <i className="bi bi-file-earmark-text"></i>
                   </a>
@@ -117,7 +119,7 @@ const Hiv_Test = () => {
                   przekazuje odpowiedzi na często zadawane pytania, między innymi:
                </p>
 
-               <div className="tabs-block">
+               <div data-aos="fade-down" data-aos-delay="200" className="tabs-block">
                   <div className="card">
                      <TabsComponent />
                   </div>

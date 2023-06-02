@@ -29,6 +29,10 @@
    background: linear-gradient(45deg, rgba(25, 119, 204, 1) 0%, rgba(50, 145, 230, 1) 100%);
 }
 
+@mixin box-shadow {
+   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -71,6 +75,10 @@ h6 {
 
 .box-shadow {
    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blockquote-footer::before {
+   content: '' !important;
 }
 
 /*--------------------------------------------------------------
@@ -1958,18 +1966,44 @@ section {
             border-radius: 0 0 var(--border-radius) var(--border-radius);
             // box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
             .tab-pane {
-               div {
-                  display: flex;
-                  align-items: center;
+               .container-box-tab {
+                  padding: 2rem;
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
                   justify-content: center;
-                  flex-direction: column;
-                  margin: 2rem;
-                  i {
-                     font-size: 3rem;
+                  align-items: center;
+                  gap: 2rem;
+                  .image-box-tab {
+                     overflow: hidden;
+                     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+                     img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: var(--border-radius);
+                     }
                   }
-                  p {
-                     margin-bottom: 0;
-                     order: 1;
+                  .content-box-tab {
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     flex-direction: column;
+                     gap: 2rem;
+                     i {
+                        font-size: 3rem;
+                     }
+                     p {
+                        margin-bottom: 0;
+                        order: 1;
+                     }
+                  }
+               }
+               @media (max-width: 992px) {
+                  .container-box-tab {
+                     grid-template-columns: repeat(1, 1fr);
+                     .image-box-tab {
+                        order: 1;
+                     }
                   }
                }
             }
@@ -1990,8 +2024,177 @@ section {
          }
       }
    }
-   .blockquote-footer::before {
-      content: '';
+}
+
+/*--------------------------------------------------------------
+# Treatments
+--------------------------------------------------------------*/
+.treatments {
+   .brochures {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: space-around;
+      gap: 1rem;
+      padding: 5rem 1rem 1rem;
+      position: relative;
+
+      &::after {
+         content: '';
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         // background-color: rgba(255, 255, 255, 0.5);
+         background-image: url(../img/bg-image-1.jpg);
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: cover;
+         background-attachment: fixed;
+         opacity: 0.5;
+         filter: grayscale(90%);
+
+         z-index: 0;
+      }
+
+      .card {
+         border: none;
+         box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+         z-index: 2;
+         &:hover {
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+         }
+      }
+      a {
+         border-radius: var(--border-radius);
+         color: var(--color-text);
+         transition: all 0.3s ease-in-out;
+
+         .brochures-button {
+            flex-shrink: 0;
+            margin: 1rem 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            font-size: 2rem;
+            font-weight: 500;
+            color: var(--color-white-1);
+            background-color: var(--color-blue-1);
+            outline: 3px solid var(--color-blue-1);
+            border: 3px solid var(--color-white-1);
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            i {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               font-size: 1.5rem;
+               color: var(--color-white-1);
+               transition: all 0.3s ease-in-out;
+            }
+         }
+
+         p {
+            font-style: italic;
+            margin-left: 1rem;
+            margin-bottom: 0;
+         }
+
+         &:hover {
+            background-color: var(--color-blue-2);
+            color: var(--color-white-1);
+            .brochures-button {
+               color: var(--color-blue-2);
+               background-color: var(--color-white-1);
+               outline: 3px solid var(--color-white-1);
+               border: 3px solid var(--color-blue-2);
+               i {
+                  color: var(--color-blue-2);
+               }
+            }
+         }
+      }
+   }
+}
+
+/*--------------------------------------------------------------
+# Materials
+--------------------------------------------------------------*/
+.materials {
+   .materials-btn {
+      a {
+         display: inline-block;
+         padding: 1.5rem 5rem;
+         border-radius: var(--border-radius);
+         color: var(--color-white-2);
+         background-color: var(--color-blue-1);
+         transition: all 0.3s ease-in-out;
+
+         &:hover {
+            color: var(--color-white-1);
+            background-color: var(--color-blue-2);
+         }
+
+         .materials-card {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .icon {
+               font-size: 1.5rem;
+            }
+            .context {
+               position: absolute;
+               p {
+                  margin-bottom: 0;
+
+                  &:nth-child(1) {
+                     color: red;
+                     top: 50%;
+                     left: 50%;
+                     transform: translate(-50%, -50%);
+                  }
+                  &:nth-child(2) {
+                     color: greenyellow;
+                     top: 50%;
+                     left: -100%;
+                     transform: translate(-50%, -50%);
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+/*--------------------------------------------------------------
+# Leaflets
+--------------------------------------------------------------*/
+.leaflets {
+   .subtitle {
+      color: var(--color-blue-3);
+   }
+
+   .leaflets-cards {
+      .leaflets-card {
+         justify-content: center;
+         margin-bottom: 2rem;
+         a {
+            color: var(--color-text);
+            .icon-box {
+               border-radius: var(--border-radius);
+               box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+               width: 17rem;
+               height: 15rem;
+               &:hover {
+                  color: var(--color-white-2);
+                  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+               }
+            }
+         }
+      }
    }
 }
 
