@@ -15,24 +15,29 @@ const Diseases = () => {
       <section className="leaflets services">
          <div className="container">
             <div className="section-title mt-10">
-               <h2 data-aos="fade-down">INNE ZAKAŻENIA I CHOROBY PRZENOSZONE DROGĄ PŁCIOWĄ</h2>
+               <h2 data-aos="fade-down">
+                  INNE ZAKAŻENIA I CHOROBY PRZENOSZONE DROGĄ PŁCIOWĄ
+               </h2>
                <p>
-                  W związku z potrzebą podnoszenia poziomu świadomości i wiedzy społeczeństwa, Krajowe Centrum ds. AIDS,
-                  we współpracy z dr Bartoszem Szetelą i dr Łukaszem Łapińskim, opracowało teksty ulotek, które dotyczą
-                  najważniejszych zakażeń przenoszonych drogą płciową (STIs). Każdą z nich konsultowała merytorycznie
-                  prof. dr hab. n. med. Joanna Narbutt, konsultant krajowy w dziedzinie dermatologii i wenerologii.
+                  W związku z potrzebą podnoszenia poziomu świadomości i wiedzy
+                  społeczeństwa, Krajowe Centrum ds. AIDS, we współpracy z dr
+                  Bartoszem Szetelą i dr Łukaszem Łapińskim, opracowało teksty
+                  ulotek, które dotyczą najważniejszych zakażeń przenoszonych
+                  drogą płciową (STIs). Każdą z nich konsultowała merytorycznie
+                  prof. dr hab. n. med. Joanna Narbutt, konsultant krajowy w
+                  dziedzinie dermatologii i wenerologii.
                </p>
             </div>
 
             <h4 className="subtitle text-center mb-5">
-               Opracowano 9 ulotek w ramach serii POWIEDZ STOP WIRUSOM, które dotyczą:
+               Opracowano 9 ulotek w ramach serii POWIEDZ STOP WIRUSOM, które
+               dotyczą:
             </h4>
 
             <div className="row leaflets-cards">
                <div
                   className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
-                  data-aos="flip-left"
-                  data-aos-anchor-placement="top-bottom"
+                  data-aos="zoom-in"
                >
                   <a href={Leaflets1} target="_blank" rel="noopener noreferrer">
                      <div className="icon-box">
@@ -47,8 +52,7 @@ const Diseases = () => {
 
                <div
                   className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
-                  data-aos="flip-left"
-                  data-aos-anchor-placement="top-bottom"
+                  data-aos="zoom-in"
                >
                   <a href={Leaflets2} target="_blank" rel="noopener noreferrer">
                      <div className="icon-box">
@@ -63,8 +67,7 @@ const Diseases = () => {
 
                <div
                   className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
-                  data-aos="flip-left"
-                  data-aos-anchor-placement="top-bottom"
+                  data-aos="zoom-in"
                >
                   <a href={Leaflets3} target="_blank" rel="noopener noreferrer">
                      <div className="icon-box">
@@ -79,8 +82,7 @@ const Diseases = () => {
 
                <div
                   className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
-                  data-aos="flip-left"
-                  data-aos-anchor-placement="top-bottom"
+                  data-aos="zoom-in"
                >
                   <a href={Leaflets4} target="_blank" rel="noopener noreferrer">
                      <div className="icon-box">
@@ -95,8 +97,7 @@ const Diseases = () => {
 
                <div
                   className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
-                  data-aos="flip-left"
-                  data-aos-anchor-placement="top-bottom"
+                  data-aos="zoom-in"
                >
                   <a href={Leaflets5} target="_blank" rel="noopener noreferrer">
                      <div className="icon-box">
@@ -111,8 +112,7 @@ const Diseases = () => {
 
                <div
                   className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
-                  data-aos="flip-left"
-                  data-aos-anchor-placement="top-bottom"
+                  data-aos="zoom-in"
                >
                   <a href={Leaflets6} target="_blank" rel="noopener noreferrer">
                      <div className="icon-box">
@@ -127,8 +127,7 @@ const Diseases = () => {
 
                <div
                   className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
-                  data-aos="flip-left"
-                  data-aos-anchor-placement="top-bottom"
+                  data-aos="zoom-in"
                >
                   <a href={Leaflets7} target="_blank" rel="noopener noreferrer">
                      <div className="icon-box">
@@ -143,8 +142,7 @@ const Diseases = () => {
 
                <div
                   className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
-                  data-aos="flip-left"
-                  data-aos-anchor-placement="top-bottom"
+                  data-aos="zoom-in"
                >
                   <a href={Leaflets8} target="_blank" rel="noopener noreferrer">
                      <div className="icon-box">
@@ -159,8 +157,7 @@ const Diseases = () => {
 
                <div
                   className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
-                  data-aos="flip-left"
-                  data-aos-anchor-placement="top-bottom"
+                  data-aos="zoom-in"
                >
                   <a href={Leaflets9} target="_blank" rel="noopener noreferrer">
                      <div className="icon-box">
@@ -175,8 +172,9 @@ const Diseases = () => {
             </div>
 
             <p className="text-center fst-italic fw-semibold mb-4">
-               Celem każdej ulotki jest omówienie najważniejszych objawów danej jednostki chorobowej, możliwości
-               zdiagnozowania i leczenia oraz sposobów zapobiegania.
+               Celem każdej ulotki jest omówienie najważniejszych objawów danej
+               jednostki chorobowej, możliwości zdiagnozowania i leczenia oraz
+               sposobów zapobiegania.
             </p>
 
             <figure>

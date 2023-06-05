@@ -2058,6 +2058,10 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   width: 17rem;
   height: 15rem;
+  transition: all 0.3s ease-in-out;
+}
+.leaflets .leaflets-cards .leaflets-card a .icon-box i {
+  transition: all 0.3s ease-in-out;
 }
 .leaflets .leaflets-cards .leaflets-card a .icon-box:hover {
   color: var(--color-white-2);
