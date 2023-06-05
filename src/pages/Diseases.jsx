@@ -12,9 +12,9 @@ import Leaflets9 from './../doc/7/9-Zakazenia-przewodu-pokarmowego.pdf';
 
 const Diseases = () => {
    return (
-      <section class="leaflets services">
-         <div class="container">
-            <div class="section-title mt-10">
+      <section className="leaflets services">
+         <div className="container">
+            <div className="section-title mt-10">
                <h2 data-aos="fade-down">INNE ZAKAŻENIA I CHOROBY PRZENOSZONE DROGĄ PŁCIOWĄ</h2>
                <p>
                   W związku z potrzebą podnoszenia poziomu świadomości i wiedzy społeczeństwa, Krajowe Centrum ds. AIDS,
@@ -28,12 +28,16 @@ const Diseases = () => {
                Opracowano 9 ulotek w ramach serii POWIEDZ STOP WIRUSOM, które dotyczą:
             </h4>
 
-            <div class="row leaflets-cards">
-               <div class="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div className="row leaflets-cards">
+               <div
+                  className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
+                  data-aos="flip-left"
+                  data-aos-anchor-placement="top-bottom"
+               >
                   <a href={Leaflets1} target="_blank" rel="noopener noreferrer">
-                     <div class="icon-box">
-                        <div class="icon">
-                           <i class="bi bi-file-earmark-text"></i>
+                     <div className="icon-box">
+                        <div className="icon">
+                           <i className="bi bi-file-earmark-text"></i>
                         </div>
                         <h5>HCV i HBV</h5>
                         <p></p>
@@ -41,11 +45,15 @@ const Diseases = () => {
                   </a>
                </div>
 
-               <div class="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch">
+               <div
+                  className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
+                  data-aos="flip-left"
+                  data-aos-anchor-placement="top-bottom"
+               >
                   <a href={Leaflets2} target="_blank" rel="noopener noreferrer">
-                     <div class="icon-box">
-                        <div class="icon">
-                           <i class="bi bi-file-earmark-text"></i>
+                     <div className="icon-box">
+                        <div className="icon">
+                           <i className="bi bi-file-earmark-text"></i>
                         </div>
                         <h5>Kiły</h5>
                         <p></p>
@@ -53,11 +61,15 @@ const Diseases = () => {
                   </a>
                </div>
 
-               <div class="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch">
+               <div
+                  className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
+                  data-aos="flip-left"
+                  data-aos-anchor-placement="top-bottom"
+               >
                   <a href={Leaflets3} target="_blank" rel="noopener noreferrer">
-                     <div class="icon-box">
-                        <div class="icon">
-                           <i class="bi bi-file-earmark-text"></i>
+                     <div className="icon-box">
+                        <div className="icon">
+                           <i className="bi bi-file-earmark-text"></i>
                         </div>
                         <h5>Rzęsistkowicy</h5>
                         <p></p>
@@ -65,11 +77,15 @@ const Diseases = () => {
                   </a>
                </div>
 
-               <div class="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch">
+               <div
+                  className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
+                  data-aos="flip-left"
+                  data-aos-anchor-placement="top-bottom"
+               >
                   <a href={Leaflets4} target="_blank" rel="noopener noreferrer">
-                     <div class="icon-box">
-                        <div class="icon">
-                           <i class="bi bi-file-earmark-text"></i>
+                     <div className="icon-box">
+                        <div className="icon">
+                           <i className="bi bi-file-earmark-text"></i>
                         </div>
                         <h5>Świerzbu i wszawicy</h5>
                         <p></p>
@@ -77,11 +93,15 @@ const Diseases = () => {
                   </a>
                </div>
 
-               <div class="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch">
+               <div
+                  className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
+                  data-aos="flip-left"
+                  data-aos-anchor-placement="top-bottom"
+               >
                   <a href={Leaflets5} target="_blank" rel="noopener noreferrer">
-                     <div class="icon-box">
-                        <div class="icon">
-                           <i class="bi bi-file-earmark-text"></i>
+                     <div className="icon-box">
+                        <div className="icon">
+                           <i className="bi bi-file-earmark-text"></i>
                         </div>
                         <h5>Chlamydia trachomatis i Mycoplasma genitalium</h5>
                         <p></p>
@@ -89,11 +109,15 @@ const Diseases = () => {
                   </a>
                </div>
 
-               <div class="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch">
+               <div
+                  className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
+                  data-aos="flip-left"
+                  data-aos-anchor-placement="top-bottom"
+               >
                   <a href={Leaflets6} target="_blank" rel="noopener noreferrer">
-                     <div class="icon-box">
-                        <div class="icon">
-                           <i class="bi bi-file-earmark-text"></i>
+                     <div className="icon-box">
+                        <div className="icon">
+                           <i className="bi bi-file-earmark-text"></i>
                         </div>
                         <h5>HIV</h5>
                         <p></p>
@@ -101,11 +125,15 @@ const Diseases = () => {
                   </a>
                </div>
 
-               <div class="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch">
+               <div
+                  className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
+                  data-aos="flip-left"
+                  data-aos-anchor-placement="top-bottom"
+               >
                   <a href={Leaflets7} target="_blank" rel="noopener noreferrer">
-                     <div class="icon-box">
-                        <div class="icon">
-                           <i class="bi bi-file-earmark-text"></i>
+                     <div className="icon-box">
+                        <div className="icon">
+                           <i className="bi bi-file-earmark-text"></i>
                         </div>
                         <h5>Rzeżączki</h5>
                         <p></p>
@@ -113,11 +141,15 @@ const Diseases = () => {
                   </a>
                </div>
 
-               <div class="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch">
+               <div
+                  className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
+                  data-aos="flip-left"
+                  data-aos-anchor-placement="top-bottom"
+               >
                   <a href={Leaflets8} target="_blank" rel="noopener noreferrer">
-                     <div class="icon-box">
-                        <div class="icon">
-                           <i class="bi bi-file-earmark-text"></i>
+                     <div className="icon-box">
+                        <div className="icon">
+                           <i className="bi bi-file-earmark-text"></i>
                         </div>
                         <h5>Ziarniniaka wenerycznego pachwin</h5>
                         <p></p>
@@ -125,11 +157,15 @@ const Diseases = () => {
                   </a>
                </div>
 
-               <div class="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch">
+               <div
+                  className="leaflets-card col-lg-4 col-md-6 d-flex align-items-stretch"
+                  data-aos="flip-left"
+                  data-aos-anchor-placement="top-bottom"
+               >
                   <a href={Leaflets9} target="_blank" rel="noopener noreferrer">
-                     <div class="icon-box">
-                        <div class="icon">
-                           <i class="bi bi-file-earmark-text"></i>
+                     <div className="icon-box">
+                        <div className="icon">
+                           <i className="bi bi-file-earmark-text"></i>
                         </div>
                         <h5>Zakażeń przewodu pokarmowego</h5>
                         <p></p>
@@ -144,7 +180,7 @@ const Diseases = () => {
             </p>
 
             <figure>
-               <figcaption class="blockquote-footer text-end">
+               <figcaption className="blockquote-footer text-end">
                   źródło: <cite title="Source Title">www.aids.gov.pl</cite>
                </figcaption>
             </figure>

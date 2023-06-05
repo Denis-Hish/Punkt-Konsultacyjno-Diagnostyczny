@@ -19,7 +19,7 @@ import Diseases from './pages/Diseases';
 import Materials from './pages/Materials';
 
 import Notfoundpage from './pages/404';
-import Footer from './components/Footer';
+import FooterNew from './components/FooterNew';
 import BtnUp from './components/BtnUp';
 import Preloader from './components/Preloader';
 
@@ -44,7 +44,7 @@ const App = () => {
             <Route path="*" element={<Notfoundpage />} />
          </Routes>
 
-         <Footer />
+         <FooterNew />
          <BtnUp />
          <Preloader />
       </BrowserRouter>

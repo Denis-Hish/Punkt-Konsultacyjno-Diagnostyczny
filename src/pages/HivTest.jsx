@@ -126,7 +126,7 @@ const Hiv_Test = () => {
                </div>
 
                <figure>
-                  <figcaption class="blockquote-footer text-end">
+                  <figcaption className="blockquote-footer text-end">
                      źródło: <cite title="Source Title">www.aids.gov.pl</cite>
                   </figcaption>
                </figure>

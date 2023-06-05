@@ -23,7 +23,7 @@ const Treatments = () => {
          </div>
 
          <div className="brochures mb-3 section-bg">
-            <div className="card">
+            <div className="card" data-aos="fade-up">
                <a
                   href={BrochuresDoc1}
                   target="_blank"
@@ -37,7 +37,7 @@ const Treatments = () => {
                </a>
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="fade-up" data-aos-delay="100">
                <a
                   href={BrochuresDoc2}
                   target="_blank"
@@ -51,7 +51,7 @@ const Treatments = () => {
                </a>
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="fade-up" data-aos-delay="200">
                <a
                   href={BrochuresDoc3}
                   target="_blank"
@@ -65,7 +65,7 @@ const Treatments = () => {
                </a>
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="fade-up" data-aos-delay="300">
                <a
                   href={BrochuresDoc4}
                   target="_blank"
@@ -79,7 +79,7 @@ const Treatments = () => {
                </a>
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="fade-up" data-aos-delay="400">
                <a
                   href={BrochuresDoc5}
                   target="_blank"
@@ -93,7 +93,7 @@ const Treatments = () => {
                </a>
             </div>
 
-            <div className="card">
+            <div className="card" data-aos="fade-up" data-aos-delay="500">
                <a
                   href={BrochuresDoc6}
                   target="_blank"
