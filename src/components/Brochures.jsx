@@ -26,7 +26,9 @@ const Brochures = () => {
                            className="glightbox play-btn mb-4"
                            target="_blank"
                            rel="noopener noreferrer"
-                        ></a>
+                        >
+                           &nbsp;
+                        </a>
                      </div>
                      <div className="icon-boxes text-cards col-xl-7 col-lg-6 d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
                         <a
