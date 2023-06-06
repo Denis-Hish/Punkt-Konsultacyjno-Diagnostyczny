@@ -4,72 +4,68 @@ import logoNzoz from './../img/logo-nzoz.png';
 
 const Footer = () => {
    return (
-      <footer id="footer">
-         <div className="container">
-            <div className="row">
-               <div className="col-12 col-lg-4 my-3">
-                  <div className="border-logo">
-                     <p className="text-center mt-3">
-                        Punkt Konsultacyjno-Diagnostyczny działa w ramach Poradni NZOZ "Nadzieja Rodzinie"
+      <footer>
+         <div className="top-footer">
+            <div className="container">
+               <div className="contact-cards">
+                  <a className="contact-card" href="tel:+48503147303">
+                     <i className="bi bi-telephone"></i>
+                     <p className="text-center">503-147-303</p>
+                  </a>
+
+                  <a className="contact-card" href="mailto:rejestracja@snr.org.pl">
+                     <i className="bi bi-envelope-at"></i>
+                     <p className="text-center">rejestracja@snr.org.pl</p>
+                  </a>
+
+                  <a
+                     className="contact-card"
+                     href="https://goo.gl/maps/aWWFrQvb7QWLpdQd8"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     <i className="bi bi-geo-alt"></i>
+                     <p className="text-center">
+                        Karczówkowska 36 <br /> 25-711 Kielce
                      </p>
-                     <img src={logoNzoz} alt="Logo" />
-                     <p className="text-center mt-3">prowadzonej przez Stowarzyszenie "Nadzieja Rodzinie"</p>
-                     <img src={logoSnr} alt="Logo" />
-                  </div>
+                  </a>
                </div>
+            </div>
+         </div>
 
-               <div className="col-12 col-lg-8">
-                  <div className="row">
-                     <div className="col-12 col-lg-6">
-                        <div className="card-kontact">
-                           <i className="bi bi-clock"></i>
-                           <div className="row">
-                              <div className="col">
-                                 <p className="text-end">wtorek</p>
-                              </div>
-                              <div className="col">
-                                 <p>od 16:00 do 19:00</p>
-                              </div>
-                           </div>
-                           <div className="row">
-                              <div className="col">
-                                 <p className="text-end">czwartek</p>
-                              </div>
-                              <div className="col">
-                                 <p>od 09:00 do 11:00</p>
-                              </div>
-                           </div>
+         <div className="bottom-footer">
+            <div className="container">
+               <div className="logo-cards">
+                  <div className="logo-card">
+                     <a
+                        className="logo-img"
+                        href="https://nzoz.nadziejarodzinie.org.pl/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        <div className="img-box">
+                           <img src={logoNzoz} alt="Logo" />
                         </div>
-                     </div>
-
-                     <div className="col-12 col-lg-6">
-                        <div className="card-kontact">
-                           <a href="tel:+48503147303">
-                              <i className="bi bi-telephone"></i>
-                              <p className="text-center">503-147-303</p>
-                           </a>
-                        </div>
-                     </div>
+                        <p className="text-center">
+                           Punkt Konsultacyjno-Diagnostyczny <br /> działa w ramach Poradni NZOZ "Nadzieja Rodzinie"
+                        </p>
+                     </a>
                   </div>
 
-                  <div className="row">
-                     <div className="col-12 col-lg-6">
-                        <div className="card-kontact">
-                           <a href="mailto:rejestracja@snr.org.pl">
-                              <i className="bi bi-envelope-at"></i>
-                              <p className="text-center">rejestracja@snr.org.pl</p>
-                           </a>
+                  <div className="logo-card">
+                     <a
+                        className="logo-img"
+                        href="https://nadziejarodzinie.org.pl/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                     >
+                        <div className="img-box">
+                           <img src={logoSnr} alt="Logo" />
                         </div>
-                     </div>
-
-                     <div className="col-12 col-lg-6">
-                        <div className="card-kontact">
-                           <a href="https://goo.gl/maps/aWWFrQvb7QWLpdQd8" target="_blank" rel="noopener noreferrer">
-                              <i className="bi bi-geo-alt"></i>
-                              <p className="text-center">Karczówkowska 36 25-711 Kielce</p>
-                           </a>
-                        </div>
-                     </div>
+                        <p className="text-center">
+                           Prowadzonej przez <br /> Stowarzyszenie "Nadzieja Rodzinie"
+                        </p>
+                     </a>
                   </div>
                </div>
             </div>

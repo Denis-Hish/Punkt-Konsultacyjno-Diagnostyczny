@@ -1903,6 +1903,7 @@ section {
   gap: 1rem;
   padding: 5rem 1rem 1rem;
   position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .treatments .brochures::after {
   content: "";
@@ -2601,70 +2602,143 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer,
-footer a {
-  color: #444;
-}
-
 footer {
+  box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.1);
+  /* --------------------------------------- */
+  /* --------------------------------------- */
+}
+footer .top-footer {
+  padding: 2rem 0 1.5rem;
   background: #ced4da;
-  padding: 2rem 0.5rem 1rem;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-footer .footer-container {
-  gap: 3rem;
-}
-footer .logo-box img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 200px;
-}
-footer .logo-box p {
-  margin-bottom: 0;
-}
-footer .contacts-box {
-  width: auto;
-}
-footer .card-contact {
+footer .top-footer .contact-cards {
   display: flex;
-  margin: 0 auto 1rem;
-  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-footer .card-contact:last-child {
-  margin-bottom: 0;
+footer .top-footer .contact-cards .contact-card {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.25rem;
 }
-footer .card-contact i {
-  margin-right: 1rem;
-  font-size: 2rem;
+footer .top-footer .contact-cards .contact-card i {
+  font-size: 1.5rem;
+  color: var(--color-white-2) !important;
+  position: relative;
+  z-index: 1;
+}
+footer .top-footer .contact-cards .contact-card i::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-blue-1);
+  outline: 3px solid var(--color-blue-1);
+  border: 3px solid var(--color-white-2);
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+footer .top-footer .contact-cards .contact-card p {
+  transition: all 0.3s ease-in-out;
   color: var(--color-blue-1);
 }
-footer .card-contact p {
+footer .top-footer .contact-cards .contact-card:hover i {
+  color: var(--color-white-1) !important;
+}
+footer .top-footer .contact-cards .contact-card:hover i::before {
+  animation: shake-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+footer .top-footer .contact-cards .contact-card:hover i::after {
+  background-color: var(--color-blue-2);
+  outline: 3px solid var(--color-blue-2);
+  border: 3px solid var(--color-white-1);
+}
+footer .top-footer .contact-cards .contact-card:hover P {
+  color: var(--color-blue-2);
+}
+footer .bottom-footer {
+  padding: 1.5rem 0 2rem;
+  background: #adb5bd;
+}
+footer .bottom-footer .logo-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+footer .bottom-footer .logo-cards .logo-card {
+  flex: 1;
+}
+footer .bottom-footer .logo-cards .logo-card a {
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+footer .bottom-footer .logo-cards .logo-card a .img-box {
+  max-width: 150px;
+}
+footer .bottom-footer .logo-cards .logo-card a .img-box img {
+  width: 100%;
+}
+footer .bottom-footer .logo-cards .logo-card:hover a {
+  color: var(--color-blue-1);
+}
+footer p {
   margin-bottom: 0;
 }
-footer .card-contact:hover a {
-  color: var(--color-blue-2);
-}
-footer .card-contact:hover i {
-  color: var(--color-blue-2);
-}
-footer .border-right {
-  border-right: 1px solid #999;
-}
-footer .border-left {
-  border-left: 1px solid #999;
+@media (max-width: 768px) {
+  footer .top-footer .contact-cards {
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    gap: 1.5rem;
+  }
+  footer .top-footer .contact-cards .contact-card {
+    flex-direction: row;
+  }
+  footer .top-footer .contact-cards .contact-card p br {
+    display: none;
+  }
 }
 @media (max-width: 992px) {
-  footer .footer-container {
+  footer .bottom-footer .logo-cards {
     flex-direction: column;
+    gap: 1.5rem;
   }
-  footer .border-right {
-    border-right: none;
+  footer .bottom-footer .logo-cards .logo-img {
+    flex-direction: column;
   }
 }
-@media (max-width: 768px) {
-  footer .flex-container {
-    flex-direction: column;
+@keyframes shake-bottom {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-4deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
   }
 }
 

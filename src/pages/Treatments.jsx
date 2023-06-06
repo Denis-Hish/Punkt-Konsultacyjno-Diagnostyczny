@@ -9,7 +9,7 @@ import BrochuresDoc6 from './../doc/6/zakazenie_rozpoznanie.pdf';
 
 const Treatments = () => {
    return (
-      <section className="treatments">
+      <section className="treatments section-bg">
          <div className="container">
             <div className="section-title mt-10">
                <h2 data-aos="fade-down">LECZENIE HIV/AIDS</h2>
@@ -22,7 +22,7 @@ const Treatments = () => {
             </div>
          </div>
 
-         <div className="brochures mb-3 section-bg">
+         <div className="brochures">
             <div className="card" data-aos="fade-up">
                <a
                   href={BrochuresDoc1}
