@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './../css/style.css';
 
 const BtnUp = () => {
    useEffect(() => {
@@ -19,9 +18,12 @@ const BtnUp = () => {
    }, []);
 
    return (
-      <a href="#" className="back-to-top d-flex align-items-center justify-content-center">
+      <button
+         className="back-to-top d-flex align-items-center justify-content-center"
+         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
          <i className="bi bi-arrow-up-short"></i>
-      </a>
+      </button>
    );
 };
 
