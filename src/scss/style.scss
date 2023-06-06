@@ -26,11 +26,7 @@
 
 @mixin linear-bg {
    background: rgb(25, 119, 204);
-   background: linear-gradient(
-      45deg,
-      rgba(25, 119, 204, 1) 0%,
-      rgba(50, 145, 230, 1) 100%
-   );
+   background: linear-gradient(45deg, rgba(25, 119, 204, 1) 0%, rgba(50, 145, 230, 1) 100%);
 }
 
 @mixin box-shadow {
@@ -134,7 +130,6 @@ h6 {
    width: max-content;
 
    i {
-      font-size: 14px;
       vertical-align: middle;
       color: var(--color-white-2);
       transition: all ease-in-out 0.3s;
@@ -271,7 +266,6 @@ h6 {
    padding: 10px 25px;
    white-space: nowrap;
    transition: 0.3s;
-   font-size: 14px;
    display: inline-block;
    color: #e9e9e9;
    &:hover {
@@ -818,7 +812,6 @@ section {
 }
 
 .why-us .icon-boxes .icon-box p {
-   font-size: 15px;
    color: #848484;
 }
 
@@ -892,7 +885,6 @@ section {
                padding: 10px 25px;
                white-space: nowrap;
                transition: 0.3s;
-               font-size: 14px;
                display: inline-block;
                color: #e9e9e9;
                margin-left: 20px;
@@ -916,7 +908,6 @@ section {
 .about .icon-box .description {
    margin-left: 85px;
    line-height: 24px;
-   font-size: 14px;
 }
 
 .about .video-box {
@@ -2202,7 +2193,6 @@ section {
       }
 
       p {
-         font-size: 17px;
          font-weight: bold;
          color: #ffffff;
          margin-bottom: 0;
@@ -2530,100 +2520,6 @@ section {
       background: var(--color-blue-1);
    }
 }
-/*--------------------------------------------------------------
-# Doctors
---------------------------------------------------------------*/
-// .doctors {
-//    background: #fff;
-// }
-
-// .doctors .member {
-//    position: relative;
-//    box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
-//    padding: 30px;
-//    border-radius: 10px;
-// }
-
-// .doctors .member .pic {
-//    overflow: hidden;
-//    width: 180px;
-//    border-radius: 50%;
-// }
-
-// .doctors .member .pic img {
-//    transition: ease-in-out 0.3s;
-// }
-
-// .doctors .member:hover img {
-//    transform: scale(1.1);
-// }
-
-// .doctors .member .member-info {
-//    padding-left: 30px;
-// }
-
-// .doctors .member h4 {
-//    font-weight: 700;
-//    margin-bottom: 5px;
-//    font-size: 20px;
-//    color: var(--color-blue-3);
-// }
-
-// .doctors .member span {
-//    display: block;
-//    font-size: 15px;
-//    padding-bottom: 10px;
-//    position: relative;
-//    font-weight: 500;
-// }
-
-// .doctors .member span::after {
-//    content: '';
-//    position: absolute;
-//    display: block;
-//    width: 50px;
-//    height: 1px;
-//    background: #b2c8dd;
-//    bottom: 0;
-//    left: 0;
-// }
-
-// .doctors .member p {
-//    margin: 10px 0 0 0;
-//    font-size: 14px;
-// }
-
-// .doctors .member .social {
-//    margin-top: 12px;
-//    display: flex;
-//    align-items: center;
-//    justify-content: flex-start;
-// }
-
-// .doctors .member .social a {
-//    transition: ease-in-out 0.3s;
-//    display: flex;
-//    align-items: center;
-//    justify-content: center;
-//    border-radius: 50px;
-//    width: 32px;
-//    height: 32px;
-//    background: #a0bcd5;
-// }
-
-// .doctors .member .social a i {
-//    color: #fff;
-//    font-size: 16px;
-//    margin: 0 2px;
-// }
-
-// .doctors .member .social a:hover {
-//    background: var(--color-blue-1);
-// }
-
-// .doctors .member .social a + a {
-//    margin-left: 8px;
-// }
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -2881,58 +2777,6 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-// footer {
-//    // padding: 60px 0 60px;
-//    font-family: 'Raleway', sans-serif;
-//    font-size: 14px;
-//    font-weight: 600;
-//    color: #444;
-//    box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
-//    background: #ced4da;
-
-//    img {
-//       display: block;
-//       margin: 20px auto;
-//       width: 100%;
-//       max-width: 150px;
-//    }
-
-//    a {
-//       color: #444;
-//       transition: all 0.3s ease-in-out;
-//    }
-
-//    i {
-//       display: block;
-//       font-size: 32px;
-//       text-align: center;
-//       color: var(--color-blue-1);
-//       margin: 16px 0 16px;
-//       transition: all 0.3s ease-in-out;
-//    }
-
-//    .border-logo {
-//       display: grid;
-//       height: 100%;
-//       border-right: 1px solid #d1d1d1;
-//       border-bottom: 0px solid #d1d1d1;
-//       @media (max-width: 992px) {
-//          border-right: 0px solid #d1d1d1;
-//          border-bottom: 1px solid #d1d1d1;
-//       }
-//    }
-
-//    .card-contact {
-//       padding: 16px 0;
-//       margin: 16px 0;
-//       border-radius: 10px;
-//       min-height: 200px;
-//       background: var(--color-white-2);
-//       box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.1);
-//    }
-// }
-
-/* NEW FOOTER */
 footer,
 footer a {
    color: #444;
@@ -3025,8 +2869,7 @@ footer {
    width: 100%;
    height: 80vh;
    background-color: #f1f7fd;
-   background: url(./../img/404-1.png) no-repeat bottom left,
-      url(./../img/404-2.png) no-repeat center right;
+   background: url(./../img/404-1.png) no-repeat bottom left, url(./../img/404-2.png) no-repeat center right;
    background-size: 35%;
    color: var(--color-blue-2);
    margin-top: 100px;
