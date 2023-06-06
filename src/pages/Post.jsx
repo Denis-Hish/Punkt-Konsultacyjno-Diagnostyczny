@@ -7,7 +7,7 @@ const Post = () => {
       <section className="post section-bg">
          <div className="container">
             <div className="section-title mt-10">
-               <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+               <h2 data-aos="fade-down">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
             </div>
             <div className="post-card">
                <div className="post-image">

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, Link } from 'react-router-dom';
 
 import logo from '../img/logo.png';
 
@@ -109,18 +109,16 @@ const Header = () => {
       mobileNavToggle.classList.add('bi-list');
    };
 
-   const index = 'index.html';
-
    return (
       <>
          <div id="topbar" className="d-flex align-items-center fixed-top">
             <div className="container">
                <div className="contact-info d-flex align-items-center justify-content-between">
-                  <a href={index} className="logo-pkd logo me-auto">
+                  <Link to="index.html" className="logo-pkd logo me-auto">
                      <img src={logo} alt="Logo" className="img-fluid" />
-                  </a>
+                  </Link>
                   <h1 className="title logo me-auto">
-                     <a href={index}>Punkt Konsultacyjno-Diagnostyczny</a>
+                     <Link to="/">Punkt Konsultacyjno-Diagnostyczny</Link>
                   </h1>
                   <a className="btn-tel" href="tel:+48503147303">
                      <i className="bi bi-telephone"></i>503 147 303
