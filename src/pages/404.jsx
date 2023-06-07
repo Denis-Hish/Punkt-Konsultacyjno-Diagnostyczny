@@ -7,7 +7,7 @@ const Notfoundpage = () => {
          <div className="container">
             <h3>
                Uuups! <br />
-               Houston, mamy problem
+               Houston, mamy problem 555
             </h3>
             <h4>Błąd</h4>
             <h2>404</h2>
